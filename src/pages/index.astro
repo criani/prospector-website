@@ -3,6 +3,11 @@ import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 
 import homeHero from '../assets/homeHero.svg';
+import homeSecondary from '../assets/homeSecondary.svg';
+import cardImg1 from '../assets/cardImg1.svg';
+import cardImg2 from '../assets/cardImg2.svg';
+import cardImg3 from '../assets/cardImg3.svg';
+import cardImg4 from '../assets/cardImg4.svg';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -10,7 +15,7 @@ import homeHero from '../assets/homeHero.svg';
 
 <Layout>
 	<Header />
-	<section class="py-5 bg-light">
+	<section>
 		<div class="container">
 		  <div class="row">
 			<!-- Text Section -->
@@ -49,6 +54,220 @@ import homeHero from '../assets/homeHero.svg';
 		  </div>
 		</div>
 	  </section>
+
+	  <section>
+		<div class="container">
+		  <div class="row">
+			<!-- Text Section -->
+			<div class="col-md-12">
+			  <h2 class="fw-bold mb-4" style="font-size: 55px;">The Prospector Difference</h2>
+			  <p style="font-size: 18px;">
+				Meet your unique needs with Prospector's expert On-Demand Security Consulting in<br> cybersecurity, risk management, and regulatory compliance. Access to customized, ongoing,<br> managed services lets you collaborate with Prospector further. Prospector becomes part of<br> your team providing concrete steps to enhance your security while keeping it as valuable and<br> cost-effective as possible.
+			  </p>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+	  <section class="py-5">
+		<div class="container-xl" style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);">
+		  <div class="row align-items-center">
+			<!-- Text Section -->
+			<div class="col-md-6">
+			  <h2 style="font-size: 24px;"><span class="fw-bold">Full stack</span> security, <span class="fw-bold mark">fully managed</span> to eliminate a breach.</h2>
+			  <p class="mt-3">
+				Prospector's mission is simple: we help your IT team move beyond traditional<br> security by providing proactive security services.
+			  </p>
+			</div>
+	  
+			<!-- Image Section -->
+			<div class="col-md-6 text-center">
+			  <img 
+				src={homeSecondary.src} 
+				alt="Proactive Security Services" 
+				class="img-fluid"
+				style="margin-top: -160px;"
+			  />
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+	  <section class="py-5">
+		<div class="container text-center">
+		  <div class="row g-4">
+			<!-- Card 1 -->
+			<div class="col-lg-3 col-md-6">
+			  <div class="card border-0 shadow" style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);
+height: 354px;">
+				<div class="position-relative">
+				  <img
+					src={cardImg1.src}
+					alt="Card 1 Image"
+					class=""
+					style="margin-top: -30px;"
+				  />
+				</div>
+				<div class="card-body">
+				  <h5 style="font-size: 24px; line-height: 29px;"><span class="fw-bold">75% increase</span> in cloud environment intrusions* </h5>
+				  <p style="font-size: 18px; line-height: 22px;">
+					Prospector's top-to-bottom security protects your cloud environments from threats.
+				  </p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Card 2 -->
+			<div class="col-lg-3 col-md-6">
+				<div class="card border-0 shadow" style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);
+height: 354px;">
+				  <div class="position-relative">
+					<img
+					  src={cardImg2.src}
+					  alt="Card 1 Image"
+					  class=""
+					  style="margin-top: -30px;"
+					/>
+				  </div>
+				  <div class="card-body">
+					<h5 style="font-size: 24px; line-height: 29px;"><span class="fw-bold">Decades of experience</span> in world class protection</h5>
+					<p style="font-size: 18px; line-height: 22px;">
+						Propsector protects your critical infrastructure using deep industry experience custom to your needs.					</p>
+				  </div>
+				</div>
+			  </div>
+	  
+			<!-- Card 4 -->
+			<div class="col-lg-3 col-md-6">
+				<div class="card border-0 shadow" style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);
+height: 354px;">
+				  <div class="position-relative">
+					<img
+					  src={cardImg3.src}
+					  alt="Card 1 Image"
+					  class=""
+					  style="margin-top: -30px;"
+					/>
+				  </div>
+				  <div class="card-body">
+					<h5 style="font-size: 24px; line-height: 29px;"><span class="fw-bold">2 - 62min</span> to move from one breach to another*</h5>
+					<p style="font-size: 18px; line-height: 22px;">
+						Ongoing tool management and organizational monitoring identifies a threat in real-time.					</p>
+				  </div>
+				</div>
+			  </div>
+
+						<!-- Card 3 -->
+						<div class="col-lg-3 col-md-6">
+							<div class="card border-0 shadow" style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);
+			height: 354px;">
+							  <div class="position-relative">
+								<img
+								  src={cardImg4.src}
+								  alt="Card 1 Image"
+								  class=""
+								  style="margin-top: -30px;"
+								/>
+							  </div>
+							  <div class="card-body">
+								<h5 style="font-size: 24px; line-height: 29px;"><span class="fw-bold">Instant protection.</span> Instant value. </h5>
+								<p style="font-size: 18px; line-height: 22px;">
+									Prospector empowers you,  overseeing tool management and fast tracking a path to framework aligned cybersecurity. 					</p>
+							  </div>
+							</div>
+						  </div>
+		  </div>
+		</div>
+	  </section>
+
+	  <section class="py-3">
+		<div class="container">
+		  <div class="row justify-content-center">
+			<div class="col-auto">
+			  <a href="#" class="btn btn-hero2 btn-lg d-inline-flex align-items-center">
+				More About Prospector
+				<svg
+				  xmlns="http://www.w3.org/2000/svg"
+				  width="22"
+				  height="22"
+				  fill="currentColor"
+				  class="bi bi-arrow-right-circle align-middle ms-2"
+				  viewBox="0 0 16 16"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+				  />
+				</svg>
+			  </a>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+	  <section class="py-5">
+		<div class="container">
+		  <div class="row align-items-center">
+			<!-- Image Section -->
+			<div class="col-md-6 text-center">
+			  <img 
+				src="https://via.placeholder.com/500x300" 
+				alt="Ready for Protection" 
+				class="img-fluid rounded shadow"
+			  />
+			</div>
+	  
+			<!-- Text Section -->
+			<div class="col-md-6">
+			  <h2 class="fw-bold mb-3" style="font-size: 55px; line-height: 66px;">Ready for Protection by Prospector?</h2>
+			  <p class="py-2">
+				Get started today with our Foundations package for only <strong>$18 per month*</strong>. Or learn more about our increased protection packages to align with your unique needs.
+			  </p>
+			  <a href="#" class="btn btn-hero btn-lg d-inline-flex align-items-center">
+				Start With Foundations
+				<svg
+				  xmlns="http://www.w3.org/2000/svg"
+				  width="22"
+				  height="22"
+				  fill="currentColor"
+				  class="bi bi-arrow-right-circle align-middle ms-2"
+				  viewBox="0 0 16 16"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+				  />
+				</svg>
+			  </a>
+			  <a href="#" class="btn btn-hero2 btn-lg d-inline-flex align-items-center">
+				See All Benefits
+				<svg
+				  xmlns="http://www.w3.org/2000/svg"
+				  width="22"
+				  height="22"
+				  fill="currentColor"
+				  class="bi bi-arrow-right-circle align-middle ms-2"
+				  viewBox="0 0 16 16"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+				  />
+				</svg>
+			  </a>
+	  
+			  <p class="fw-bold pt-4" style="font-size: 24px;">
+				Still want more information?<br />
+			  </p>
+			  <p class="py-2">
+				<a href="#">Contact us</a> for an in-depth conversation, demo, or even just to answer your questions on how we can partner with you. <a href="#" class="text-primary">Prospector FAQs</a> are also a great place to learn more.
+			  </p>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+
 </Layout>
 
 <style>
@@ -80,6 +299,24 @@ text-decoration-skip-ink: none;
 	.btn-hero {
   background-color: #bbd758;
   color: #0b232b;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27.29px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Extra spacing between text and icon if needed */
+}
+
+.btn-hero2 {
+  background-color: #ffffff;
+  color: #0b232b;
+  border: 2px solid #bbd758;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
