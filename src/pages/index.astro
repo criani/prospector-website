@@ -2,10 +2,96 @@
 import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 
+import homeHero from '../assets/homeHero.svg';
+
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
 	<Header />
+	<section class="py-5 bg-light">
+		<div class="container">
+		  <div class="row">
+			<!-- Text Section -->
+			<div class="col-md-6 mt-5">
+			  <h1 class="main-h1">Stay Secure, Stay Productive</h1>
+			  <p class="lead">
+				<span class="mark">Expert protection for only <strong>$18 a month*</strong></span> through comprehensive assessments, program development, and world-class Managed Security Services <span>tailored to you</span> and your organization’s needs.
+			  </p>
+			  <p class="lead">
+				Being <span class="mark">protected by Prospector</span> lets you focus on your core business while we keep your team secure.
+			  </p>
+			  <a href="#" class="btn btn-hero btn-lg">
+				Get Started
+				<svg
+				  xmlns="http://www.w3.org/2000/svg"
+				  width="22"
+				  height="22"
+				  fill="currentColor"
+				  class="bi bi-arrow-right-circle align-middle ms-2"
+				  viewBox="0 0 16 16"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+				  />
+				</svg>
+			  </a>
+			</div>
+			
+			<!-- Image Section -->
+			<div class="col-md-6 text-center">
+			  <div>
+				<img src={homeHero.src} alt="Secure Your Business" class="img-fluid rounded">
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
 </Layout>
+
+<style>
+	.main-h1 {
+		font-family: Kumbh Sans;
+font-size: 64px;
+font-weight: 800;
+line-height: 79.38px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+	}
+
+	.lead {
+		font-family: Kumbh Sans;
+font-size: 24px;
+font-weight: 500;
+line-height: 29.77px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+	}
+	.mark {
+		background-color: #BBD758;
+	}
+
+	.btn-hero {
+  background-color: #bbd758;
+  color: #0b232b;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27.29px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Extra spacing between text and icon if needed */
+}
+
+</style>
