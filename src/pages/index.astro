@@ -8,6 +8,7 @@ import cardImg1 from '../assets/cardImg1.svg';
 import cardImg2 from '../assets/cardImg2.svg';
 import cardImg3 from '../assets/cardImg3.svg';
 import cardImg4 from '../assets/cardImg4.svg';
+import backgroundMain from '../assets/backgroundMain.svg';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -209,16 +210,33 @@ height: 354px;">
 		<div class="container">
 		  <div class="row align-items-center">
 			<!-- Image Section -->
-			<div class="col-md-6 text-center">
-			  <img 
-				src="https://via.placeholder.com/500x300" 
-				alt="Ready for Protection" 
-				class="img-fluid rounded shadow"
-			  />
-			</div>
+			<div
+				class="col-md-5 position-relative text-center"
+				style={`background-image: url(${backgroundMain.src}); background-size: cover; background-position: center; height: 400px;`}
+				>
+				<div class="d-flex flex-column h-100">
+					<!-- Top Left Text -->
+					<div class="text-start fw-bold" style="font-size: 36px; line-height: 36px; text-align: left;">
+					Foundations<br>Package
+					</div>
+
+					<!-- Center Center Text -->
+					<div class="text-center">
+						<div class="">
+							<span class="display-4 fw-bold">$<span class="super" style="font-size: 128px;">18</span></span>
+							<span class="fw-bold" style="font-size: 40px; line-height: 40px; text-align: left;">per month</span>
+						</div>
+					</div>
+
+					<!-- Bottom Center Text -->
+					<div class="text-center fw-bold" style="font-size: 24px; line-height: 29px;">
+					All Tools Included • Fully Managed •<br> Single Source for Security • Top to Bottom Protection
+					</div>
+				</div>
+				</div>
 	  
 			<!-- Text Section -->
-			<div class="col-md-6">
+			<div class="col-md-7">
 			  <h2 class="fw-bold mb-3" style="font-size: 55px; line-height: 66px;">Ready for Protection by Prospector?</h2>
 			  <p class="py-2">
 				Get started today with our Foundations package for only <strong>$18 per month*</strong>. Or learn more about our increased protection packages to align with your unique needs.
@@ -260,7 +278,7 @@ height: 354px;">
 				Still want more information?<br />
 			  </p>
 			  <p class="py-2">
-				<a href="#">Contact us</a> for an in-depth conversation, demo, or even just to answer your questions on how we can partner with you. <a href="#" class="text-primary">Prospector FAQs</a> are also a great place to learn more.
+				<a href="#" style="color: #427587;">Contact us</a> for an in-depth conversation, demo, or even just to answer your questions on how we can partner with you. <a href="#" style="color: #427587;">Prospector FAQs</a> are also a great place to learn more.
 			  </p>
 			</div>
 		  </div>
@@ -271,6 +289,16 @@ height: 354px;">
 </Layout>
 
 <style>
+
+.background-image {
+  background-image: {backgroundMain.src};
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px; /* Adjust height as needed */
+  border-radius: 12px; /* Optional for rounded corners */
+  padding: 20px;
+}
 	.main-h1 {
 		font-family: Kumbh Sans;
 font-size: 64px;
@@ -293,7 +321,8 @@ text-decoration-skip-ink: none;
 
 	}
 	.mark {
-		background-color: #BBD758;
+		background-color: #bbd758a3;
+		border-radius: 20px;
 	}
 
 	.btn-hero {
