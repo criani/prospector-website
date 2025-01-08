@@ -2,7 +2,6 @@
 
 Prospector Security is a professional website providing comprehensive cybersecurity solutions, including assessments, program development, and Managed Security Services tailored to the unique needs of businesses. The website is designed to ensure a seamless user experience while conveying trust and expertise.
 
-
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
