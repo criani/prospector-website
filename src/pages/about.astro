@@ -3,6 +3,15 @@ import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 
 import aboutHero from '../assets/aboutHero.svg';
+import assessment from '../assets/magnifying-laptop.png';
+import consulting from '../assets/consulting.png';
+import compliance from '../assets/laptop-badge.png';
+
+import dustin from '../assets/dustin.avif';
+import chris from '../assets/chris.avif';
+import logan from '../assets/logan.avif';
+
+import backgroundMain from '../assets/backgroundMain.svg';
 
 ---
 
@@ -69,7 +78,7 @@ import aboutHero from '../assets/aboutHero.svg';
           <!-- Top Aligned Row -->
           <div class="row mb-5 py-3">
             <div class="col-md-6 align-self-start d-flex">
-              <img src="path/to/image1.jpg" alt="Top Aligned" class="me-3 img-fluid" style="max-width: 100px;">
+              <img src={assessment.src} alt="Top Aligned" class="me-3 img-fluid" style="max-width: 200px;">
               <div>
                 <h3 class="fw-bold" style="font-size: 24px;">1. Assessment</h3>
                 <p class="mb-0" style="font-size: 18px; line-height: 22px;">
@@ -82,7 +91,7 @@ import aboutHero from '../assets/aboutHero.svg';
           <!-- Middle Aligned Row -->
           <div class="row mb-5 py-3">
             <div class="col-md-6 align-self-center offset-md-3 d-flex">
-              <img src="path/to/image2.jpg" alt="Middle Aligned" class="me-3 img-fluid" style="max-width: 100px;">
+              <img src={consulting.src} alt="Middle Aligned" class="me-3 img-fluid" style="max-width: 200px;">
               <div>
                 <h3 class="fw-bold" style="font-size: 24px;">2. Consulting</h3>
                 <p class="mb-0" style="font-size: 18px; line-height: 22px;">
@@ -95,7 +104,7 @@ import aboutHero from '../assets/aboutHero.svg';
           <!-- Bottom Aligned Row -->
           <div class="row py-3">
             <div class="col-md-6 align-self-end d-flex ms-auto">
-              <img src="path/to/image3.jpg" alt="Bottom Aligned" class="me-3 img-fluid" style="max-width: 100px;">
+              <img src={compliance.src} alt="Bottom Aligned" class="me-3 img-fluid" style="max-width: 200px;">
               <div>
                 <h3 class="fw-bold" style="font-size: 24px;">3. Compliance</h3>
                 <p class="mb-0" style="font-size: 18px; line-height: 22px;">
@@ -117,10 +126,13 @@ import aboutHero from '../assets/aboutHero.svg';
             <div class="carousel-inner">
               <!-- Leader 1 -->
               <div class="carousel-item active">
-                <div class="card mx-auto leader-card" style="max-width: 986px;">
+                <div class="card mx-auto leader-card justify-content-center" style="max-width: 986px;">
                   <div class="row g-0 align-items-center">
-                    <div class="col-md-4">
-                      <img src="path/to/image1.jpg" class="img-fluid rounded-start" alt="Dustin Abell">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center"
+                         style={`background-image: url(${backgroundMain.src}); background-size: cover; background-position: center; height: 600px;`}
+                    >
+                      <img src={dustin.src} class="img-fluid rounded-start" alt="Dustin Abell"                                         style="border-radius: 8px;"
+                           width="200">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body text-start">
@@ -134,13 +146,16 @@ import aboutHero from '../assets/aboutHero.svg';
                   </div>
                 </div>
               </div>
-      
+
               <!-- Leader 2 -->
               <div class="carousel-item">
-                <div class="card mx-auto leader-card" style="max-width: 986px;">
+                <div class="card mx-auto leader-card justify-content-center" style="max-width: 986px;">
                   <div class="row g-0 align-items-center">
-                    <div class="col-md-4">
-                      <img src="path/to/image1.jpg" class="img-fluid rounded-start" alt="Chris Riani">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center"
+                         style={`background-image: url(${backgroundMain.src}); background-size: cover; background-position: center; height: 600px;`}
+                    >
+                      <img src={chris.src} class="img-fluid rounded-start" alt="Chris Riani"                                         style="border-radius: 8px;"
+                           width="200">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body text-start">
@@ -153,25 +168,38 @@ import aboutHero from '../assets/aboutHero.svg';
                   </div>
                 </div>
               </div>
-      
-              <!-- Leader 3 -->
-              <div class="carousel-item">
-                <div class="card mx-auto leader-card" style="max-width: 986px;">
-                  <div class="row g-0 align-items-center">
-                    <div class="col-md-4">
-                      <img src="path/to/image1.jpg" class="img-fluid rounded-start" alt="Logan Abell">
+
+                <!-- Leader 3 -->
+                <div class="carousel-item">
+                    <div class="card mx-auto leader-card justify-content-center" style="max-width: 986px;">
+                        <div class="row g-0 align-items-center">
+                            <!-- Image Section -->
+                            <div class="col-md-4 d-flex justify-content-center align-items-center"
+                                 style={`background-image: url(${backgroundMain.src}); background-size: cover; background-position: center; height: 600px;`}
+                            >
+                                <img
+                                        src={logan.src}
+                                        class="img-fluid"
+                                        alt="Logan Abell"
+                                        style="border-radius: 8px;"
+                                        width="200"
+                                />
+                            </div>
+
+                            <!-- Text Section -->
+                            <div class="col-md-8">
+                                <div class="card-body text-start">
+                                    <h5 class="card-title fw-bold" style="font-size: 36px;">Logan Abell</h5>
+                                    <h5 class="card-title fw-bold" style="font-size: 20px;">Director, Security Engineering + CISSP</h5>
+                                    <p class="card-text pt-3" style="font-size: 18px; line-height: 22px;">
+                                        Logan is the lead technologist at Prospector, specializing in solutions integration. His experience spans private and public sectors, and he has a passion for creating innovative security solutions for our clients. Logan holds a CISSP certification and a Bachelor’s degree in Cybersecurity from Champlain College. When not at work, he spends time with his family, explores new tech, and serves as a member of the National Guard.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                      <div class="card-body text-start">
-                        <h5 class="card-title fw-bold" style="font-size: 36px;">Logan Abell</h5>
-                        <h5 class="card-title fw-bold" style="font-size: 20px;">Director, Security Engineering + CISSP</h5>
-                        <p class="card-text pt-3" style="font-size: 18px;; line-height: 22px;">
-                            Logan is the lead technologist at Prospector, specializing in solutions integration. His experience spans private and public sectors, and he has a passion for creating innovative security solutions for our clients. Logan holds a CISSP certification and a Bachelor’s degree in Cybersecurity from Champlain College. When not at work, he spends time with his family, explores new tech, and serves as a member of the National Guard.                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+
             </div>
       
             <!-- Carousel Controls -->
