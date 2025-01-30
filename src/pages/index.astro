@@ -10,13 +10,11 @@ import cardImg3 from '../assets/cardImg3.svg';
 import cardImg4 from '../assets/cardImg4.png';
 import backgroundMain from '../assets/backgroundMain.svg';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
 	<Header />
-	<section>
+	<section class="fade-in-up">
 		<div class="container">
 		  <div class="row align-items-center">
 			<!-- Text Section -->
@@ -98,7 +96,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
 		<div class="container text-center">
 		  <div class="row g-4">
 			<!-- Card 1 -->
-			<div class="col-lg-3 col-md-6">
+			<div class="col-lg-3 col-md-6 fade-in-up delay-1">
 			  <div class="card border-0 shadow" style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);
 height: 354px;">
 				<div class="position-relative">
@@ -120,7 +118,7 @@ height: 354px;">
 			</div>
 	  
 			<!-- Card 2 -->
-			<div class="col-lg-3 col-md-6">
+			<div class="col-lg-3 col-md-6 fade-in-up delay-2">
 				<div class="card border-0 shadow" style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);
 height: 354px;">
 				  <div class="position-relative">
@@ -140,8 +138,8 @@ height: 354px;">
 				</div>
 			  </div>
 	  
-			<!-- Card 4 -->
-			<div class="col-lg-3 col-md-6">
+			<!-- Card 3 -->
+			<div class="col-lg-3 col-md-6 fade-in-up delay-1">
 				<div class="card border-0 shadow" style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);
 height: 354px;">
 				  <div class="position-relative">
@@ -160,8 +158,8 @@ height: 354px;">
 				</div>
 			  </div>
 
-						<!-- Card 3 -->
-						<div class="col-lg-3 col-md-6">
+						<!-- Card 4 -->
+						<div class="col-lg-3 col-md-6 fade-in-up delay-2">
 							<div class="card border-0 shadow" style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);
 			height: 354px;">
 							  <div class="position-relative">
@@ -291,75 +289,87 @@ height: 354px;">
 </Layout>
 
 <style>
+	/* Example fade-in-up keyframes */
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(30px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
 
-.background-image {
-  background-image: {backgroundMain.src};
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 400px; /* Adjust height as needed */
-  border-radius: 12px; /* Optional for rounded corners */
-  padding: 20px;
-}
+	/* Utility class to trigger the animation */
+	.fade-in-up {
+		opacity: 0; /* Ensures the element is hidden before animation starts */
+		animation: fadeInUp 1s ease-in-out forwards; /* 1s is the duration */
+	}
+
+	/* If you want to add a delay to certain elements, you can create variants */
+	.fade-in-up.delay-1 {
+		animation-delay: 0.25s; /* quarter second delay */
+	}
+	.fade-in-up.delay-2 {
+		animation-delay: 0.5s;
+	}
+
+	/* The rest of your existing styles remain unchanged */
 	.main-h1 {
 		font-family: Kumbh Sans;
-font-size: 64px;
-font-weight: 800;
-line-height: 79.38px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
+		font-size: 64px;
+		font-weight: 800;
+		line-height: 79.38px;
+		text-align: left;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
 	}
 
 	.lead {
 		font-family: Kumbh Sans;
-font-size: 24px;
-font-weight: 500;
-line-height: 29.77px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 29.77px;
+		text-align: left;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
 	}
 	.mark {
 		background-color: #bbd758a3;
 		border-radius: 20px;
 	}
-
 	.btn-hero {
-  background-color: #bbd758;
-  color: #0b232b;
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 27.29px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  border-radius: 3px;
-  padding: 10px 20px;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem; /* Extra spacing between text and icon if needed */
-}
-
-.btn-hero2 {
-  background-color: #ffffff;
-  color: #0b232b;
-  border: 2px solid #bbd758;
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 27.29px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  border-radius: 3px;
-  padding: 10px 20px;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem; /* Extra spacing between text and icon if needed */
-}
-
+		background-color: #bbd758;
+		color: #0b232b;
+		font-family: "Kumbh Sans", sans-serif;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 27.29px;
+		text-align: left;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
+		border-radius: 3px;
+		padding: 10px 20px;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem; /* Extra spacing between text and icon if needed */
+	}
+	.btn-hero2 {
+		background-color: #ffffff;
+		color: #0b232b;
+		border: 2px solid #bbd758;
+		font-family: "Kumbh Sans", sans-serif;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 27.29px;
+		text-align: left;
+		text-underline-position: from-font;
+		text-decoration-skip-ink: none;
+		border-radius: 3px;
+		padding: 10px 20px;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem; /* Extra spacing between text and icon if needed */
+	}
 </style>
