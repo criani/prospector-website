@@ -2,74 +2,89 @@
 import logo from '../assets/prospector-security-logo.svg';
 ---
 
-<div class="banner">
-    <p><span class="fw-bold">Experience a breach?</span> Call us now toll-free at <u class="fw-bold">855-71-CYBER (29237)</u></p>
+<div class="banner text-center py-2">
+    <p class="mb-0"><span class="fw-bold">Experience a breach?</span> Call us now toll-free at <u class="fw-bold">855-71-CYBER (29237)</u></p>
 </div>
 
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm border-bottom">
     <div class="container-lg">
-      <a class="navbar-brand" href="/"><img src={logo.src} alt="Prospector Security" width="197" height="61" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item me-4">
-            <a class="nav-link" href="/about/">About</a>
-          </li>
-          <li class="nav-item me-4">
-            <a class="nav-link" href="/pricing/">Pricing</a>
-          </li>
-          <li class="nav-item dropdown me-4">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Resources
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/msp-platform/">MSP Platform</a></li>
-              <li><a class="dropdown-item" href="/faq/">FAQs</a></li>
+        <a class="navbar-brand" href="/"><img src={logo.src} alt="Prospector Security" width="197" height="61" class="img-fluid" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
+                <li class="nav-item me-lg-4 mb-2 mb-lg-0">
+                    <a class="nav-link" href="/about/">About</a>
+                </li>
+                <li class="nav-item me-lg-4 mb-2 mb-lg-0">
+                    <a class="nav-link" href="/pricing/">Pricing</a>
+                </li>
+                <li class="nav-item dropdown me-lg-4 mb-2 mb-lg-0">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/msp-platform/">MSP Platform</a></li>
+                        <li><a class="dropdown-item" href="/faq/">FAQs</a></li>
+                    </ul>
+                </li>
             </ul>
-          </li>
-        </ul>
-        <a class="btn btn-outline-success btn-hero2" href="/contact-us/">Contact Us</a>
-      </div>
+            <a class="btn btn-outline-success btn-hero2 mt-2 mt-lg-0" href="/contact-us/">Contact Us</a>
+        </div>
     </div>
 </nav>
 
-  <style>
+<style>
     .banner {
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 54px;
-      background: linear-gradient(270deg, #BBD758 0%, #6ACCE0 16.39%, #427587 38.19%, #0B232B 100%);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 54px;
+        background: linear-gradient(270deg, #BBD758 0%, #6ACCE0 16.39%, #427587 38.19%, #0B232B 100%);
     }
+
     .btn-hero2 {
-  background-color: #ffffff;
-  color: #0b232b;
-  border: 2px solid #bbd758;
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 27.29px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  border-radius: 3px;
-  padding: 10px 20px;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem; /* Extra spacing between text and icon if needed */
-}
-
-.nav-item {
-    margin-right: 1rem;
-  }
-
-  .nav-link {
-    color: #0B232B;
-    font-size: 18px;
-    font-weight: 500;
+        background-color: #ffffff;
+        color: #0b232b;
+        border: 2px solid #bbd758;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 27.29px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
     }
 
-    </style>
+    .nav-item {
+        margin-right: 1rem;
+    }
+
+    .nav-link {
+        color: #0B232B;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+        .navbar-nav {
+            flex-direction: column;
+            align-items: center;
+        }
+        .nav-item {
+            margin-right: 0;
+            margin-bottom: 0.5rem;
+        }
+        .btn-hero2 {
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>
