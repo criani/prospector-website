@@ -1,0 +1,51 @@
+---
+import Header from '../components/Header.astro';
+import Layout from '../layouts/Layout.astro';
+
+import aboutHero from '../assets/aboutHero.svg';
+import assessment from '../assets/magnifying-laptop.png';
+import consulting from '../assets/consulting.png';
+import compliance from '../assets/laptop-badge.png';
+
+import dustin from '../assets/dustin.avif';
+import chris from '../assets/chris.avif';
+import logan from '../assets/logan.avif';
+
+import backgroundMain from '../assets/backgroundMain.svg';
+
+---
+
+
+<Layout>
+    <Header />
+
+    <section style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Section -->
+                <div class="col-md-7 mb-5">
+                    <h1 class="main-h1 fw-bold pb-3">Frequently Asked Questions</h1>
+                    <p style="font-size: 24px; line-height: 29px;">
+                        In today's digital world, <span class="mark">cyber threats are constantly evolving</span>. That's why Prospector offers fully managed cybersecurity services that provide complete protection for your business. To make sure you have all the<span class="mark"> information you need</span> to know Prospector protection is right for you, please see our frequently asked questions below.
+                    </p>
+                </div>
+
+                <!-- Image Section -->
+                <div class="col-md-5 text-center">
+                    <div>
+                        <img src={aboutHero.src} alt="Secure Your Business" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+
+<style>
+    .mark {
+        background-color: #bbd758a3;
+        border-radius: 20px;
+        padding: 0;
+    }
+</style>

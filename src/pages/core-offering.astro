@@ -1,0 +1,160 @@
+---
+import Header from '../components/Header.astro';
+import Layout from '../layouts/Layout.astro';
+
+import homeHero from '../assets/homeHero.svg';
+import homeSecondary from '../assets/homeSecondary.svg';
+import cardImg1 from '../assets/cardImg1.png';
+import cardImg2 from '../assets/cardImg2.png';
+import cardImg3 from '../assets/cardImg3.svg';
+import cardImg4 from '../assets/cardImg4.png';
+import backgroundMain from '../assets/backgroundMain.svg';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+    <Header />
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 mx-auto">
+                    <h1 class="display-4 fw-bold" style="font-size: 64px; line-height: 79px;">Foundations™<br> Package</h1>
+                    <div class="mt-4">
+                        <p class="fw-bold" style="font-size: 24px; line-height: 29px; color: #2A2B2C">
+                            Exceptional Value •   24/7 Protection  •  Streamlined Support  •  Future-Ready
+                        </p>
+                        <p style="font-size: 24px; line-height: 29px;">
+                            The Foundations™ Package is an innovative security solution designed to protect your modern business from modern threats.
+                            It provides <span class="mark">24/7 monitoring</span> and <span class="mark">rapid response</span> to keep your systems safe, strengthens your defenses to prevent attacks, and ensures you're always one step ahead of potential risks.
+                            With clear reporting and proactive protection, it simplifies security so you can focus on running your business with peace of mind, all at an<span class="mark"> affordable price</span>.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 mx-auto" style="color: #0B232B;">
+                    <p style="font-size: 24px; line-height: 29px;">
+                        The Foundations™ Package is an innovative security solution designed to protect your modern business from modern threats.
+                        It provides <span class="mark">24/7 monitoring</span> and <span class="mark">rapid response</span> to keep your systems safe, strengthens your defenses to prevent attacks, and ensures you're always one step ahead of potential risks.
+                        With clear reporting and proactive protection, it simplifies security so you can focus on running your business with peace of mind, all at an<span class="mark"> affordable price</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <!-- Text Section -->
+                <div class="col-md-12">
+                    <h2 class="fw-bold mb-4" style="font-size: 55px;">Why Choose the Foundation™ Package?</h2>
+                    <p style="font-size: 24px;">
+                        In today's digital world, <span class="mark">cyber threats are constantly evolving</span>. That's why With our Foundations™ Package offers fully managed cybersecurity services that provide complete protection for your business. With 24/7 monitoring and a team of experts by your side, Prospector ensure your business stays safe from modern threats.                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <p style="font-size: 24px; font-weight: 700; ">Comprehensive Protection</p>
+                        <p>Covers endpoint security, identity monitoring, vulnerability scanning, and DNS filtering in one streamlined package.</p>
+                    </div>
+                    <div class="row">
+                        <p style="font-size: 24px; font-weight: 700; ">Exceptional Value</p>
+                        <p>Get complete cyber protection against modern threats for just <span class="fw-bold">$18 per month</span> per user. <span class="fw-fold">Flat-rate pricing</span> that scales with your business, no hidden fees or surprises.</p>
+                    </div>
+                    <div class="row">
+                        <p style="font-size: 24px; font-weight: 700; ">Simplified Management</p>
+                        <p>Eliminate the complexity of managing multiple vendors—one package, one team, complete peace of mind.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <p style="font-size: 24px; font-weight: 700; ">Proactive Defense</p>
+                        <p><span class="fw-bold">24/7 monitoring</span> and SOC-backed response ensure threats are detected and mitigated before they impact your business.</p>
+                    </div>
+                    <div class="row">
+                        <p style="font-size: 24px; font-weight: 700; ">Focus on What Matters</p>
+                        <p>Protect against the top breach vectors—phishing, account compromise, and cloud vulnerabilities—without paying for unnecessary services.</p>
+                    </div>
+                    <div class="row">
+                        <p style="font-size: 24px; font-weight: 700; ">Customizable Add-Ons</p>
+                        <p>Tailor your security stack with optional advanced email security, employee awareness training, cloud SaaS backups, and managed endpoint backup and disaster recovery services.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 bg-gradient-x">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Section -->
+                <div class="col-md-5">
+                    <h2 class="fw-bold mb-4" style="font-size: 64px; line-height: 79px;">Learn About Protection You Can Count On</h2>
+                    <p class="mb-3 py-2" style="font-size: 18px; line-height: 22px;">
+                        Reach out today to see how we can help your organization get to the next level, by implementing world class cybersecurity - without the overhead.
+                    </p>
+                    <h4 class="fw-bold mt-4" style="font-size: 24px;">Still want more information?</h4>
+                    <p style="font-size: 18px; line-height: 22px;">
+                        Prospector FAQs are also a great place to learn more. You can also view service offerings
+                        tailored to fit your needs and learn more about how Prospector can serve you.
+                    </p>
+                </div>
+
+                <!-- Right Section: Form -->
+                <div class="col-md-7">
+                    <form class="p-4 shadow rounded bg-white">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Company</label>
+                            <input type="text" class="form-control" id="company">
+                        </div>
+                        <div class="py-3">
+                            <button type="submit" class="btn btn-hero btn-lg">Submit
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="22"
+                                        height="22"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-right-circle align-middle ms-2"
+                                        viewBox="0 0 16 16"
+                                >
+                                    <path
+                                            fill-rule="evenodd"
+                                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</Layout>
+
+<style>
+    .mark {
+        background-color: #bbd758a3;
+        border-radius: 20px;
+        padding: 0;
+    }
+</style>
