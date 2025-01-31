@@ -3,44 +3,131 @@ import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 
 import aboutHero from '../assets/aboutHero.svg';
-import assessment from '../assets/magnifying-laptop.png';
-import consulting from '../assets/consulting.png';
-import compliance from '../assets/laptop-badge.png';
-
-import dustin from '../assets/dustin.avif';
-import chris from '../assets/chris.avif';
-import logan from '../assets/logan.avif';
-
-import backgroundMain from '../assets/backgroundMain.svg';
-
 ---
-
 
 <Layout>
     <Header />
 
-    <section style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);">
+    <section
+      class="py-5"
+      style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);"
+    >
         <div class="container">
             <div class="row align-items-center">
-                <!-- Text Section -->
                 <div class="col-md-7 mb-5">
-                    <h1 class="main-h1 fw-bold pb-3">Frequently Asked Questions</h1>
-                    <p style="font-size: 24px; line-height: 29px;">
-                        In today's digital world, <span class="mark">cyber threats are constantly evolving</span>. That's why Prospector offers fully managed cybersecurity services that provide complete protection for your business. To make sure you have all the<span class="mark"> information you need</span> to know Prospector protection is right for you, please see our frequently asked questions below.
+                    <h1 class="display-4 fw-bold pb-3">
+                        Frequently Asked Questions
+                    </h1>
+                    <p class="fs-4 lh-base">
+                        In today's digital world,
+                        <span class="mark">cyber threats are constantly evolving</span>. That's why Prospector offers
+                        fully managed cybersecurity services that provide complete protection for your business. To make
+                        sure you have all the <span class="mark">information you need</span> to know Prospector protection
+                        is right for you, please see our frequently asked questions below.
                     </p>
                 </div>
-
-                <!-- Image Section -->
                 <div class="col-md-5 text-center">
-                    <div>
-                        <img src={aboutHero.src} alt="Secure Your Business" class="img-fluid rounded">
+                    <img
+                      src={aboutHero.src}
+                      alt="Secure Your Business"
+                      class="img-fluid rounded"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">
+                Your Questions, Answered
+            </h2>
+
+            <div class="accordion accordion-flush" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeadingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#faqCollapseOne"
+                          aria-expanded="true"
+                          aria-controls="faqCollapseOne"
+                        >
+                            What is included in Prospector’s package?
+                        </button>
+                    </h2>
+                    <div
+                      id="faqCollapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="faqHeadingOne"
+                      data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            Each Prospector package provides comprehensive security features,
+                            from vulnerability scanning to backup solutions, ensuring top-to-bottom
+                            protection for your organization without hidden fees.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeadingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#faqCollapseTwo"
+                          aria-expanded="false"
+                          aria-controls="faqCollapseTwo"
+                        >
+                            Does Prospector offer advanced email security?
+                        </button>
+                    </h2>
+                    <div
+                      id="faqCollapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqHeadingTwo"
+                      data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            Yes! Prospector’s Advanced Email Security includes AI-powered filtering,
+                            phishing simulations, employee awareness training, and more to keep your
+                            communications secure.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeadingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#faqCollapseThree"
+                          aria-expanded="false"
+                          aria-controls="faqCollapseThree"
+                        >
+                            How do I get started with Prospector?
+                        </button>
+                    </h2>
+                    <div
+                      id="faqCollapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqHeadingThree"
+                      data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            Getting started is easy. Contact our team or fill out our online form,
+                            and we’ll guide you through choosing the right plan, setting up your
+                            services, and ensuring your organization is protected.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 </Layout>
-
 
 <style>
     .mark {
