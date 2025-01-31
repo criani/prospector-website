@@ -18,46 +18,61 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
 <Layout>
     <Header />
-    <section style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);">
-		<div class="container">
-		  <div class="row align-items-center">
-			<!-- Text Section -->
-			<div class="col-md-7 mb-5">
-			  <h1 class="main-h1 fw-bold pb-3">Partners with a Purpose</h1>
-			  <p style="font-size: 24px; line-height: 29px;">
-                Think of Prospector as an <span class="mark">extension of your business</span>.<br> Prospector has dedicated security professionals that work<br> closely with you, committed to protecting your assets and<br> supporting your success.			  
-            </p>
-			</div>
-			
-			<!-- Image Section -->
-			<div class="col-md-5 text-center">
-			  <div>
-				<img src={aboutHero.src} alt="Secure Your Business" class="img-fluid rounded">
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </section>
-      <section>
-		<div class="container py-5">
-		  <div class="row">
-			<!-- Text Section -->
-			<div class="col-md-12">
-			  <h2 class="fw-bold mb-4" style="font-size: 55px;">Your Experienced Security Team </h2>
-              <div class="row">
-                <div class="col-md-6">
-                    <p style="font-size: 18px; line-height: 22px;">
-                        Our team of security professionals have decades of experience in the industry. We have worked with businesses of all sizes and industries, and we are dedicated to providing the highest level of security services to our clients.
+    <section   style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-4 mb-md-0">
+                    <h1 class="display-4 fw-bold pb-3">
+                        Partners with a Purpose
+                    </h1>
+                    <p class="fs-3">
+                        Think of Prospector as an <span class="mark">extension of your business</span>.
+                        Prospector has dedicated security professionals that work closely with you,
+                        committed to protecting your assets and supporting your success.
                     </p>
-              </div>
-                <div class="col-md-6">
-                    <p style="font-size: 18px; line-height: 22px;">
-                        Think of Prospector as an extension of your business. Dedicated security professionals work closely with you, committed to protecting your assets and supporting your success. You can rely on our experience and knowledge to guide you through the complexities of cybersecurity. Propector’s friendly experts are just a call or email away, ready to assist you whenever you need help or have questions. Your business goals are the Prospector mission—a dedication to helping you thrive safely and securely.                    </p>
                 </div>
-			</div>
-		  </div>
-		</div>
-	  </section>
+                <div class="col-md-5 text-center">
+                    <img
+                            src={aboutHero.src}
+                            alt="Secure Your Business"
+                            class="img-fluid rounded"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold mb-4">
+                        Your Experienced Security Team
+                    </h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <p class="fs-5 lh-base">
+                                Our team of security professionals have decades of experience in the industry.
+                                We have worked with businesses of all sizes and industries, and we are dedicated
+                                to providing the highest level of security services to our clients.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="fs-5 lh-base">
+                                Think of Prospector as an extension of your business. Dedicated security
+                                professionals work closely with you, committed to protecting your assets
+                                and supporting your success. You can rely on our experience and knowledge
+                                to guide you through the complexities of cybersecurity. Propector’s friendly
+                                experts are just a call or email away, ready to assist you whenever you
+                                need help or have questions. Your business goals are the Prospector mission—
+                                a dedication to helping you thrive safely and securely.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
       <section>
 		<div class="container py-5">
 		  <div class="row">
@@ -73,151 +88,237 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
 
 
-      <section class="py-5">
+    <section class="py-5">
         <div class="container">
-          <!-- Top Aligned Row -->
-          <div class="row mb-5 py-3">
-            <div class="col-md-6 align-self-start d-flex">
-              <img src={assessment.src} alt="Top Aligned" class="me-3 img-fluid" style="max-width: 200px;">
-              <div>
-                <h3 class="fw-bold" style="font-size: 24px;">1. Assessment</h3>
-                <p class="mb-0" style="font-size: 18px; line-height: 22px;">
-                  Time-tested and proven assessment methodologies are used to identify your regulatory gaps and security risks. A thorough roadmap to regulatory success and a comprehensive security program is provided to move your protection to the next level.
-                </p>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Middle Aligned Row -->
-          <div class="row mb-5 py-3">
-            <div class="col-md-6 align-self-center offset-md-3 d-flex">
-              <img src={consulting.src} alt="Middle Aligned" class="me-3 img-fluid" style="max-width: 200px;">
-              <div>
-                <h3 class="fw-bold" style="font-size: 24px;">2. Consulting</h3>
-                <p class="mb-0" style="font-size: 18px; line-height: 22px;">
-                  You don't have to be a regulatory expert when you have Prospector on your team! Cyber frameworks can be complicated, but rest assured, a client-centric and cooperative consulting approach gives you the advice and steps you need to succeed.
-                </p>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Bottom Aligned Row -->
-          <div class="row py-3">
-            <div class="col-md-6 align-self-end d-flex ms-auto">
-              <img src={compliance.src} alt="Bottom Aligned" class="me-3 img-fluid" style="max-width: 200px;">
-              <div>
-                <h3 class="fw-bold" style="font-size: 24px;">3. Compliance</h3>
-                <p class="mb-0" style="font-size: 18px; line-height: 22px;">
-                  Prospector helps you achieve and stay compliant with industry standards, such as ITAR, NIST 800-171, DFARS, and CMMC, as well as PCI, HIPAA, ISO 27001, and more. This, combined with audit-ready security services and policy development, ensures ongoing compliance.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="py-5">
-        <div class="container text-center">
-          <!-- Section Heading -->
-          <h1 class="fw-bold mb-5" style="font-size: 55px;">Our Leaders</h1>
-          
-          <!-- Carousel -->
-          <div id="leadersCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <!-- Leader 1 -->
-              <div class="carousel-item active">
-                <div class="card mx-auto leader-card justify-content-center" style="max-width: 986px;">
-                  <div class="row g-0 align-items-center">
-                    <div class="col-md-4 d-flex justify-content-center align-items-center"
-                         style={`background-image: url(${backgroundMain.src}); background-size: cover; background-position: center; height: 600px;`}
-                    >
-                      <img src={dustin.src} class="img-fluid rounded-start" alt="Dustin Abell"                                         style="border-radius: 8px;"
-                           width="200">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body text-start">
-                        <h5 class="card-title fw-bold" style="font-size: 36px;">Dustin Abell</h5>
-                        <h5 class="card-title fw-bold" style="font-size: 20px;">Co-Founder & COO + CJIS & HITRUST Enthusiast</h5>
-                        <p class="card-text pt-3" style="font-size: 18px;; line-height: 22px;">
-                            Dustin brings a deep background in IT and product development. Dustin led Arrowhead Technologies, a successful Managed IT Service Provider in Northern Vermont that merged with Prospector in late 2024. As COO, he oversees business operations, product development, and customer success. His detail-oriented approach is linked to his experience as a former police officer and recreational pilot. Dustin ensures our clients benefit from proactive, security-focused and expertly integrated services.
+            <div class="row mb-5 py-3">
+                <div class="col-md-6 d-flex align-items-start">
+                    <img
+                            src={assessment.src}
+                            alt="Top Aligned"
+                            class="img-fluid me-3"
+                            style="width: auto; max-width: 150px;"
+                    />
+                    <div>
+                        <h3 class="fw-bold fs-4">
+                            1. Assessment
+                        </h3>
+                        <p class="fs-5 lh-base mb-0">
+                            Time-tested and proven assessment methodologies are used to identify your regulatory gaps and security risks. A thorough roadmap to regulatory success and a comprehensive security program is provided to move your protection to the next level.
                         </p>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
 
-              <!-- Leader 2 -->
-              <div class="carousel-item">
-                <div class="card mx-auto leader-card justify-content-center" style="max-width: 986px;">
-                  <div class="row g-0 align-items-center">
-                    <div class="col-md-4 d-flex justify-content-center align-items-center"
-                         style={`background-image: url(${backgroundMain.src}); background-size: cover; background-position: center; height: 600px;`}
-                    >
-                      <img src={chris.src} class="img-fluid rounded-start" alt="Chris Riani"                                         style="border-radius: 8px;"
-                           width="200">
+            <div class="row mb-5 py-3">
+                <div class="col-md-6 offset-md-3 d-flex align-items-center">
+                    <img
+                            src={consulting.src}
+                            alt="Middle Aligned"
+                            class="img-fluid me-3"
+                            style="width: auto; max-width: 150px;"
+                    />
+                    <div>
+                        <h3 class="fw-bold fs-4">
+                            2. Consulting
+                        </h3>
+                        <p class="fs-5 lh-base mb-0">
+                            You don't have to be a regulatory expert when you have Prospector on your team! Cyber frameworks can be complicated, but rest assured, a client-centric and cooperative consulting approach gives you the advice and steps you need to succeed.
+                        </p>
                     </div>
-                    <div class="col-md-8">
-                      <div class="card-body text-start">
-                        <h5 class="card-title fw-bold" style="font-size: 36px;">Chris Riani</h5>
-                        <h5 class="card-title fw-bold" style="font-size: 20px;">Co-Founder & CISO + CISSP | CASP+ | CMMC RP</h5>
-                        <p class="card-text pt-3" style="font-size: 18px;; line-height: 22px;">
-                            As Prospector’s CISO, Chris drives security strategy, client engagement, and regulatory compliance. He founded a consulting firm in 2023, which grew and evolved into what is now, Prospector Security. His mission was to help clients navigate regulatory and security challenges while maintaining operational efficiency. Chris has over a decade of experience in Public and Private Sector cyber roles and brings expertise in building practical, effective security programs. Outside of work, he enjoys playing guitar, hiking, and serves in the Vermont Air National Guard.                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+            </div>
 
-                <!-- Leader 3 -->
-                <div class="carousel-item">
-                    <div class="card mx-auto leader-card justify-content-center" style="max-width: 986px;">
-                        <div class="row g-0 align-items-center">
-                            <!-- Image Section -->
-                            <div class="col-md-4 d-flex justify-content-center align-items-center"
-                                 style={`background-image: url(${backgroundMain.src}); background-size: cover; background-position: center; height: 600px;`}
-                            >
-                                <img
-                                        src={logan.src}
-                                        class="img-fluid"
-                                        alt="Logan Abell"
-                                        style="border-radius: 8px;"
-                                        width="200"
-                                />
-                            </div>
+            <div class="row py-3">
+                <div class="col-md-6 d-flex align-items-end ms-auto">
+                    <img
+                            src={compliance.src}
+                            alt="Bottom Aligned"
+                            class="img-fluid me-3"
+                            style="width: auto; max-width: 150px;"
+                    />
+                    <div>
+                        <h3 class="fw-bold fs-4">
+                            3. Compliance
+                        </h3>
+                        <p class="fs-5 lh-base mb-0">
+                            Prospector helps you achieve and stay compliant with industry standards, such as ITAR, NIST 800-171, DFARS, and CMMC, as well as PCI, HIPAA, ISO 27001, and more. This, combined with audit-ready security services and policy development, ensures ongoing compliance.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-                            <!-- Text Section -->
-                            <div class="col-md-8">
-                                <div class="card-body text-start">
-                                    <h5 class="card-title fw-bold" style="font-size: 36px;">Logan Abell</h5>
-                                    <h5 class="card-title fw-bold" style="font-size: 20px;">Director, Security Engineering + CISSP</h5>
-                                    <p class="card-text pt-3" style="font-size: 18px; line-height: 22px;">
-                                        Logan is the lead technologist at Prospector, specializing in solutions integration. His experience spans private and public sectors, and he has a passion for creating innovative security solutions for our clients. Logan holds a CISSP certification and a Bachelor’s degree in Cybersecurity from Champlain College. When not at work, he spends time with his family, explores new tech, and serves as a member of the National Guard.
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-5 display-4">
+                Our Leaders
+            </h1>
+
+            <div id="leadersCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Leader 1 -->
+                    <div class="carousel-item active">
+                        <div class="card mx-auto" style="max-width: 986px;">
+                            <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start">
+
+                                <div
+                                  class="p-3 d-flex flex-column justify-content-center"
+                                  style={`
+                  background-image: url(${backgroundMain.src});
+                  background-size: cover;
+                  background-position: center;
+                  min-height: 300px;
+                  width: 100%;
+                `}
+                                >
+                                    <img
+                                      src={dustin.src}
+                                      alt="Dustin Abell"
+                                      class="img-fluid mx-auto"
+                                      style="max-width: 150px; height: auto; border-radius: 8px;"
+                                    />
+                                </div>
+
+                                <div class="p-3" style="width: 100%;">
+                                    <h5 class="fw-bold fs-2">Dustin Abell</h5>
+                                    <h5 class="fw-bold fs-5">
+                                        Co-Founder & COO + CJIS & HITRUST Enthusiast
+                                    </h5>
+                                    <p class="fs-6 lh-base pt-3 mb-0">
+                                        Dustin brings a deep background in IT and product development. Dustin led Arrowhead Technologies, a successful Managed IT Service Provider in Northern Vermont that merged with Prospector in late 2024. As COO, he oversees business operations, product development, and customer success. His detail-oriented approach is linked to his experience as a former police officer and recreational pilot. Dustin ensures our clients benefit from proactive, security-focused and expertly integrated services.
                                     </p>
                                 </div>
+
                             </div>
                         </div>
                     </div>
+
+                    <!-- Leader 2 -->
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="max-width: 986px;">
+                            <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start">
+
+                                <div
+                                  class="p-3 d-flex flex-column justify-content-center"
+                                  style={`
+                  background-image: url(${backgroundMain.src});
+                  background-size: cover;
+                  background-position: center;
+                  min-height: 300px;
+                  width: 100%;
+                `}
+                                >
+                                    <img
+                                      src={chris.src}
+                                      alt="Chris Riani"
+                                      class="img-fluid mx-auto"
+                                      style="max-width: 150px; height: auto; border-radius: 8px;"
+                                    />
+                                </div>
+
+                                <div class="p-3" style="width: 100%;">
+                                    <h5 class="fw-bold fs-2">Chris Riani</h5>
+                                    <h5 class="fw-bold fs-5">
+                                        Co-Founder & CISO + CISSP | CASP+ | CMMC RP
+                                    </h5>
+                                    <p class="fs-6 lh-base pt-3 mb-0">
+                                        As Prospector’s CISO, Chris drives security strategy, client engagement, and regulatory compliance. He founded a consulting firm in 2023, which grew and evolved into what is now Prospector Security. His mission was to help clients navigate regulatory and security challenges while maintaining operational efficiency. Chris has over a decade of experience in Public and Private Sector cyber roles and brings expertise in building practical, effective security programs. Outside of work, he enjoys playing guitar, hiking, and serves in the Vermont Air National Guard.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Leader 3 -->
+                    <div class="carousel-item">
+                        <div class="card mx-auto" style="max-width: 986px;">
+                            <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start">
+
+                                <div
+                                  class="p-3 d-flex flex-column justify-content-center"
+                                  style={`
+                  background-image: url(${backgroundMain.src});
+                  background-size: cover;
+                  background-position: center;
+                  min-height: 300px;
+                  width: 100%;
+                `}
+                                >
+                                    <img
+                                      src={logan.src}
+                                      alt="Logan Abell"
+                                      class="img-fluid mx-auto"
+                                      style="max-width: 150px; height: auto; border-radius: 8px;"
+                                    />
+                                </div>
+
+                                <div class="p-3" style="width: 100%;">
+                                    <h5 class="fw-bold fs-2">Logan Abell</h5>
+                                    <h5 class="fw-bold fs-5">
+                                        Director, Security Engineering + CISSP
+                                    </h5>
+                                    <p class="fs-6 lh-base pt-3 mb-0">
+                                        Logan is the lead technologist at Prospector, specializing in solutions integration. His experience spans private and public sectors, and he has a passion for creating innovative security solutions for our clients. Logan holds a CISSP certification and a Bachelor’s degree in Cybersecurity from Champlain College. When not at work, he spends time with his family, explores new tech, and serves as a member of the National Guard.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
+                <div class="d-flex justify-content-center mt-3">
+                    <button
+                      class="btn btn-outline-secondary me-2"
+                      type="button"
+                      data-bs-target="#leadersCarousel"
+                      data-bs-slide="prev"
+                    >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-arrow-left"
+                          viewBox="0 0 16 16"
+                        >
+                            <path
+                              fill-rule="evenodd"
+                              d="M15 8a.5.5 0 0 1-.5.5H3.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L3.707 7.5H14.5a.5.5 0 0 1 .5.5z"
+                            />
+                        </svg>
+                    </button>
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      data-bs-target="#leadersCarousel"
+                      data-bs-slide="next"
+                    >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-arrow-right"
+                          viewBox="0 0 16 16"
+                        >
+                            <path
+                              fill-rule="evenodd"
+                              d="M1 8a.5.5 0 0 1 .5-.5h10.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L12.293 8.5H1.5a.5.5 0 0 1-.5-.5z"
+                            />
+                        </svg>
+                    </button>
+                </div>
             </div>
-      
-            <!-- Carousel Controls -->
-            <div class="d-flex justify-content-center mt-3">
-              <button class="btn btn-outline-secondary me-2" type="button" data-bs-target="#leadersCarousel" data-bs-slide="prev">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H3.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708.708L3.707 7.5H14.5a.5.5 0 0 1 .5.5z"/>
-                </svg>
-              </button>
-              <button class="btn btn-outline-secondary" type="button" data-bs-target="#leadersCarousel" data-bs-slide="next">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h10.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L12.293 8.5H1.5a.5.5 0 0 1-.5-.5z"/>
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
+
 
       <section class="py-5 bg-gradient-x">
         <div class="container">
