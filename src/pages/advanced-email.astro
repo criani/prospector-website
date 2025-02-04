@@ -1,3 +1,291 @@
 ---
+import Header from '../components/Header.astro';
+import Layout from '../layouts/Layout.astro';
+
+import homeHero from '../assets/homeHero.svg';
+import homeSecondary from '../assets/homeSecondary.svg';
+import cardImg1 from '../assets/cardImg1.png';
+import cardImg2 from '../assets/cardImg2.png';
+import cardImg3 from '../assets/cardImg3.svg';
+import cardImg4 from '../assets/cardImg4.png';
+import backgroundMain from '../assets/backgroundMain.svg';
 
 ---
+
+<Layout>
+    <Header />
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-7 mx-auto">
+                    <h1 class="display-4 fw-bold">Advanced Email Security Bundle</h1>
+                    <div class="mt-4">
+                        <p class="fw-bold" style="font-size: 24px; line-height: 29px; color: #2A2B2C">
+                            AI-Powered •   Data Loss Prevention  •  Detailed Reporting
+                        </p>
+                        <p style="font-size: 24px; line-height: 29px;">
+                            By opting for the Advanced Email Security Bundle, you're investing in an<span class="mark">elevated level of security</span>
+                            that complements our core services. This ensures your business communications are not only protected by advanced technology but also <span class="mark">
+                            supported by a well-informed team</span> , giving you added peace of mind.
+                        </p>
+                    </div>
+                </div>
+                <div
+                        class="col-md-5 position-relative text-center"
+                        style={`background-image: url(${backgroundMain.src}); background-size: cover; background-position: center; height: 400px;`}
+                >
+                    <div class="d-flex flex-column">
+                        <!-- Center Center Text -->
+                        <div class="text-center">
+                            <div class="">
+                                <span class="display-5 fw-bold">$<span class="super" style="font-size: 80px;">7</span></span>
+                                <span class="fw-bold" style="font-size: 30px; line-height: 30px; text-align: left;">per user<br> per month</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text Section -->
+                    <div class="col-md-12">
+                        <h5 class="fw-bold mb-3 mt-3">Personalized protection includes:</h5>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="list-unstyled text-start">
+                                    <li class="fw-bold d-flex align-items-center lh-lg">
+                    <span class="fw-bold me-2" style="color: #bbd758;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                        </svg>
+                    </span>
+                                        Managed Endpoint Protection
+                                    </li>
+                                    <li class="fw-bold d-flex align-items-center lh-lg">
+                    <span class="fw-bold me-2" style="color: #bbd758;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                        </svg>
+                    </span>
+                                        Microsoft 365 Security Monitoring
+                                    </li>
+                                    <li class="fw-bold d-flex align-items-center lh-lg">
+                    <span class="fw-bold me-2" style="color: #bbd758;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                        </svg>
+                    </span>
+                                        24/7 Threat Detection and Incident Response
+                                    </li>
+                                    <li class="fw-bold d-flex align-items-center lh-lg">
+                    <span class="fw-bold me-2" style="color: #bbd758;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                        </svg>
+                    </span>
+                                        Proactive Security Hardening
+                                    </li>
+                                    <li class="fw-bold d-flex align-items-center lh-lg">
+                    <span class="fw-bold me-2" style="color: #bbd758;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                        </svg>
+                    </span>
+                                        Cloud Security Posture Management
+                                    </li>
+                                    <li class="fw-bold d-flex align-items-center lh-lg">
+                    <span class="fw-bold me-2" style="color: #bbd758;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                        </svg>
+                    </span>
+                                        Monthly Vulnerability Scanning
+                                    </li>
+                                    <li class="fw-bold d-flex align-items-center lh-lg">
+                    <span class="fw-bold me-2" style="color: #bbd758;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                        </svg>
+                    </span>
+                                        Secure Web Filtering
+                                    </li>
+                                    <li class="fw-bold d-flex align-items-center lh-lg">
+                    <span class="fw-bold me-2" style="color: #bbd758;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                            <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                        </svg>
+                    </span>
+                                        Clear, Actionable Reporting
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <!-- Text Section -->
+                <div class="col-md-12">
+                    <h2 class="fw-bold mb-4" style="font-size: 55px;">The Next Level in Support and Protection</h2>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <p style="font-size: 24px; font-weight: 700; ">Advanced Threat Detection</p>
+                        <p>Offers an extra layer of defense against complex threats like phishing scams, malware, and ransomware that basic settings might not catch.</p>
+                    </div>
+                    <div class="row">
+                        <p style="font-size: 24px; font-weight: 700; ">AI-Powered Email Filtering</p>
+                        <p>Utilize intelligent technology to identify and block deceptive emails before they reach your inbox with smart detection.</p>
+                    </div>
+                    <div class="row">
+                        <p style="font-size: 24px; font-weight: 700; ">Employee Security Awareness Training</p>
+                        <p>Empower your team with interactive training to help them recognize and avoid email scams, reducing the risk of human error.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <p style="font-size: 24px; font-weight: 700; ">Simulated Phishing Exercises</p>
+                        <p>Real-world practice with regular, safe simulations to improve your team’s ability to spot and report suspicious emails.</p>
+                    </div>
+                    <div class="row">
+                        <p style="font-size: 24px; font-weight: 700; ">Data Loss Prevention</p>
+                        <p>Protect confidential data and prevent accidental or unauthorized sharing of sensitive information via email.</p>
+                    </div>
+                    <div class="row">
+                        <p style="font-size: 24px; font-weight: 700; ">Detailed Reporting and Insights</p>
+                        <p>Understand your security posture with comprehensive reports on threats blocked and training progress to help you make informed decisions.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-5 bg-gradient-x" style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Section -->
+                <div class="col-md-5">
+                    <h2 class="fw-bold mb-4" style="font-size: 64px; line-height: 79px;">Learn About Protection You Can Count On</h2>
+                    <p class="mb-3 py-2" style="font-size: 18px; line-height: 22px;">
+                        Reach out today to see how we can help your organization get to the next level, by implementing world class cybersecurity - without the overhead.
+                    </p>
+                    <h4 class="fw-bold mt-4" style="font-size: 24px;">Still want more information?</h4>
+                    <p style="font-size: 18px; line-height: 22px;">
+                        Prospector FAQs are also a great place to learn more. You can also view service offerings
+                        tailored to fit your needs and learn more about how Prospector can serve you.
+                    </p>
+                </div>
+
+                <!-- Right Section: Form -->
+                <div class="col-md-7">
+                    <form class="p-4 shadow rounded bg-white">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Company</label>
+                            <input type="text" class="form-control" id="company">
+                        </div>
+                        <div class="py-3">
+                            <button type="submit" class="btn btn-hero btn-lg">Submit
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="22"
+                                        height="22"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-right-circle align-middle ms-2"
+                                        viewBox="0 0 16 16"
+                                >
+                                    <path
+                                            fill-rule="evenodd"
+                                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</Layout>
+<style>
+
+    li {
+        list-style-type: none;
+    }
+    .mark {
+        background-color: #bbd758a3;
+        border-radius: 20px;
+        padding: 0;
+    }
+
+    .btn-hero {
+        background-color: #bbd758;
+        color: #0b232b;
+        font-family: "Kumbh Sans", sans-serif;
+        //font-size: 22px;
+        font-weight: 700;
+        line-height: 27.29px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem; /* Extra spacing between text and icon if needed */
+    }
+
+    .btn-hero2 {
+        background-color: #ffffff;
+        color: #0b232b;
+        border: 2px solid #bbd758;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 27.29px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        display: flex; /* Ensures full flex alignment */
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
+        gap: 0.5rem; /* Adds spacing between text and icon */
+
+    }
+
+</style>
