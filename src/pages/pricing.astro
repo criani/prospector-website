@@ -352,164 +352,139 @@ import calculator from '../assets/calculator.png';
         </div>
     </section>
 
- <section class="py-5">
-  <div class="container">
-    <div class="row flex-column-reverse flex-md-row">
-      <!-- Left Column -->
+<section className="py-5">
+  <div className="container">
+    <div className="row d-flex align-items-stretch">
+      {/* Left Column */}
       <div
-        class="col-12 col-md-6 p-5"
-        style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);"
+        className="col-12 col-md-6 p-5 d-flex flex-column justify-content-center"
+        style={{
+          background: "linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%)",
+        }}
       >
-        <div class="row">
-          <div class="col-12">
-            <div class="form-group">
-              <h1 class="fw-bold" style="font-size: 27px;">
-                COST ESTIMATOR
-              </h1>
-              <p>
-                Choose your offerings and services to see how little it costs
-                to get fully protected from Prospector.
-              </p>
+        <div className="form-group">
+          <h1 className="fw-bold" style={{ fontSize: "27px" }}>
+            COST ESTIMATOR
+          </h1>
+          <p>
+            Choose your offerings and services to see how little it costs
+            to get fully protected from Prospector.
+          </p>
 
-              <label for="employees" class="fw-bold" style="font-size: 20px;">
-                How many employees do you need covered?
+          <label htmlFor="employees" className="fw-bold" style={{ fontSize: "20px" }}>
+            How many employees do you need covered?
+          </label>
+          <div className="pt-4">
+            <input
+              type="number"
+              className="form-control"
+              id="employees"
+              style={{ maxWidth: "200px" }}
+            />
+          </div>
+
+          {/* Toggle switches */}
+          <div className="pt-4 fw-bold">
+            <div className="form-check form-switch mb-3">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="toggleEmailSecurity"
+              />
+              <label className="form-check-label" htmlFor="toggleEmailSecurity">
+                Include Advanced Email Security
               </label>
-              <div class="pt-4">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="employees"
-                  style="max-width: 200px;"
-                />
-              </div>
-
-              <!-- Replace list with toggles -->
-              <div class="pt-4 fw-bold" style="line-height: 40px;">
-                <div class="form-check form-switch mb-3">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    role="switch"
-                    id="toggleEmailSecurity"
-                  />
-                  <label
-                    class="form-check-label"
-                    for="toggleEmailSecurity"
-                  >
-                    Include Advanced Email Security
-                  </label>
-                </div>
-
-                <div class="form-check form-switch mb-3">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    role="switch"
-                    id="toggleUserBackup"
-                  />
-                  <label
-                    class="form-check-label"
-                    for="toggleUserBackup"
-                  >
-                    Include User Backup and Recovery
-                  </label>
-                </div>
-
-                <div class="form-check form-switch">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    role="switch"
-                    id="toggleServer"
-                  />
-                  <label
-                    class="form-check-label"
-                    for="toggleServer"
-                  >
-                    Include Server Backup and Recovery
-                  </label>
-                </div>
-              </div>
-
-              <div class="pt-4">
-                <button
-                  type="button"
-                  class="btn btn-hero btn-lg d-inline-flex align-items-center"
-                  id="calculateBtn"
-                >
-                  Calculate
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-circle align-middle ms-2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a7 7 0 1
-                         0 14 0A7 7 0 0 0
-                         1 8m15 0A8 8 0 1 1
-                         0 8a8 8 0 0
-                         1 16 0M4.5 7.5a.5.5
-                         0 0 0 0 1h5.793l-2.147
-                         2.146a.5.5 0 0
-                         0 .708.708l3-3a.5.5
-                         0 0 0 0-.708l-3-3a.5.5
-                         0 1 0-.708.708L10.293
-                         7.5z"
-                    />
-                  </svg>
-                </button>
-              </div>
             </div>
+
+            <div className="form-check form-switch mb-3">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="toggleUserBackup"
+              />
+              <label className="form-check-label" htmlFor="toggleUserBackup">
+                Include User Backup and Recovery
+              </label>
+            </div>
+
+            <div className="form-check form-switch">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="toggleServer"
+              />
+              <label className="form-check-label" htmlFor="toggleServer">
+                Include Server Backup and Recovery
+              </label>
+            </div>
+          </div>
+
+          <div className="pt-4">
+            <button
+              type="button"
+              className="btn btn-hero btn-lg d-inline-flex align-items-center"
+              id="calculateBtn"
+            >
+              Calculate
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                className="bi bi-arrow-right-circle align-middle ms-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147
+                         2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
 
-		<!-- Right Column -->
-		<div className="col-12 col-md-6 position-relative text-center mt-5 mt-md-0">
-		  <div
-			className="d-flex flex-column justify-content-center align-items-center h-100 w-100"
-			style={{
-			  backgroundImage: `url(${backgroundMain.src})`,
-			  backgroundSize: "cover",
-			  backgroundPosition: "center",
-			  minHeight: "400px",
-			}}
-		  >
-			<div className="fw-bold" style={{ fontSize: "22px" }}>
-			  Your Estimated Cost
-			</div>
-			<div>
-			  <span
-				className="fw-bold"
-				style={{ fontSize: "100px" }}
-				id="costDisplay"
-			  >
-				$0
-			  </span>
-			</div>
-			<div className="fw-bold" style={{ fontSize: "30px" }}>
-			  per month
-			</div>
-			<p
-			  id="storageNote"
-			  style={{
-				fontSize: "14px",
-				textAlign: "center",
-				display: "none",
-				marginTop: "10px",
-			  }}
-			>
-			  *Backup Storage Available at Additional Cost
-			</p>
-		  </div>
-		</div>
+      {/* Right Column */}
+      <div className="col-12 col-md-6 d-flex align-items-center position-relative text-center">
+        <div
+          className="w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+          style={{
+            backgroundImage: `url(${backgroundMain.src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            minHeight: "400px",
+          }}
+        >
+          <div className="fw-bold" style={{ fontSize: "22px" }}>
+            Your Estimated Cost
+          </div>
+          <div>
+            <span className="fw-bold" style={{ fontSize: "100px" }} id="costDisplay">
+              $0
+            </span>
+          </div>
+          <div className="fw-bold" style={{ fontSize: "30px" }}>per month</div>
+          <p
+            id="storageNote"
+            style={{
+              fontSize: "14px",
+              textAlign: "center",
+              display: "none",
+              marginTop: "10px",
+            }}
+          >
+            *Backup Storage Available at Additional Cost
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-  <!-- JavaScript for calculations and note toggling -->
+  {/* JavaScript for calculations and note toggling */}
   <script>
     const employeesInput = document.getElementById("employees");
     const costDisplay = document.getElementById("costDisplay");
@@ -548,8 +523,6 @@ import calculator from '../assets/calculator.png';
     });
   </script>
 </section>
-
-
 
 </Layout>
 
