@@ -14,9 +14,6 @@ import logan from '../assets/logan.avif';
 import backgroundMain from '../assets/backgroundMain.svg';
 
 ---
-
-
-
 <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
   <defs>
     <filter id="marker-shape">
@@ -91,7 +88,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
 			<div class="col-md-12">
 			  <h2 class="fw-bold mb-4" style="font-size: 55px;">The Prospector Approach</h2>
 			  <p style="font-size: 24px;">
-                Prospector is built on a foundation of in-depth knowledge to identify and <span class="realistic-marker-highlight">fill gaps</span> for your business.<br> A thorough <span class="realistic-marker-highlight">consultation aids your team</span> in creating an action plan utilizing protection by Prospector to ensure<br> security and compliance from now to the future.			  </p>
+                Prospector is built on a foundation of in-depth knowledge to identify and <span class="mark">fill gaps</span> for your business.<br> A thorough <span class="mark">consultation aids your team</span> in creating an action plan utilizing protection by Prospector to ensure<br> security and compliance from now to the future.			  </p>
 			</div>
 		  </div>
 		</div>
@@ -390,14 +387,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
         </div>
       </section>
 
-<svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
-  <defs>
-    <filter id="marker-shape">
-      <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
-      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
-    </filter>
-  </defs>
-</svg>
+
 
 </Layout>
 
@@ -409,6 +399,10 @@ import backgroundMain from '../assets/backgroundMain.svg';
         line-height: 79px;
         font-family: 'Kumbh Sans', sans-serif;
     }
+	.mark {
+		background-color: #bbd758a3;
+		border-radius: 20px;
+	}
 
     .leader-card {
         background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);
@@ -433,26 +427,28 @@ import backgroundMain from '../assets/backgroundMain.svg';
   gap: 0.5rem;
 }
 
-.realistic-marker-highlight{
-  position:relative;
-}
-
-.realistic-marker-highlight:before{
-  content:"";
-  background-color:#bbd758a3;
-  width:100%;
-  height:1em;
-  position:absolute;
-  z-index:-1;
-  filter:url(#marker-shape);
-  left:-0.25em;
-  top:0.1em;
-  padding:0 0.25em;
-}
-
 .bg-gradient-x {
   background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%); !important;
 }
+
+	.realistic-marker-highlight{
+	  position:relative;
+	}
+
+	.realistic-marker-highlight:before{
+	  content:"";
+	  background-color:#bbd758a3;
+	  width:100%;
+	  height:1em;
+	  position:absolute;
+	  z-index:-1;
+	  filter:url(#marker-shape);
+	  left:-0.25em;
+	  top:0.1em;
+	  padding:0 0.25em;
+	}
+
+
 
 input.form-control {
   border: none; /* Remove all borders */
@@ -471,6 +467,4 @@ input.form-control:focus {
 label.form-label {
   font-weight: 600;
 }
-
-
 </style>
