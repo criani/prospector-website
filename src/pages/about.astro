@@ -426,6 +426,23 @@ import backgroundMain from '../assets/backgroundMain.svg';
   gap: 0.5rem;
 }
 
+.realistic-marker-highlight{
+  position:relative;
+}
+
+.realistic-marker-highlight:before{
+  content:"";
+  background-color:#bbd758a3;
+  width:100%;
+  height:1em;
+  position:absolute;
+  z-index:-1;
+  filter:url(#marker-shape);
+  left:-0.25em;
+  top:0.1em;
+  padding:0 0.25em;
+}
+
 .bg-gradient-x {
   background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%); !important;
 }
@@ -448,20 +465,5 @@ label.form-label {
   font-weight: 600;
 }
 
-.realistic-marker-highlight{
-  position:relative;
-}
 
-.realistic-marker-highlight:before{
-  content:"";
-  background-color:#bbd758a3;
-  width:100%;
-  height:1em;
-  position:absolute;
-  z-index:-1;
-  filter:url(#marker-shape);
-  left:-0.25em;
-  top:0.1em;
-  padding:0 0.25em;
-}
 </style>
