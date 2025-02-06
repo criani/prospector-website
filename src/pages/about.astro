@@ -16,6 +16,17 @@ import backgroundMain from '../assets/backgroundMain.svg';
 ---
 
 
+
+<svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+  <defs>
+    <filter id="marker-shape">
+      <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+    </filter>
+  </defs>
+</svg>
+
+
 <Layout>
     <Header />
     <section   style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);">
@@ -398,10 +409,6 @@ import backgroundMain from '../assets/backgroundMain.svg';
         line-height: 79px;
         font-family: 'Kumbh Sans', sans-serif;
     }
-	.mark {
-		background-color: #bbd758a3;
-		border-radius: 20px;
-	}
 
     .leader-card {
         background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);

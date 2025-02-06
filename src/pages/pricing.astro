@@ -6,6 +6,19 @@ import calculator from '../assets/calculator.png';
 
 ---
 
+
+
+<svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+  <defs>
+    <filter id="marker-shape">
+      <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+    </filter>
+  </defs>
+</svg>
+
+
+
 <Layout title="Pricing">
     <Header />
     <section class="py-5 bg-light">
@@ -520,13 +533,6 @@ import calculator from '../assets/calculator.png';
     li {
         list-style-type: none;
     }
-    .mark {
-        background-color: #bbd758a3;
-        border-radius: 20px;
-        padding: 0;
-    }
-	
-	
 
     .btn-hero {
         background-color: #bbd758;
