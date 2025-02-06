@@ -12,19 +12,6 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
 ---
 
-
-
-
-<svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
-  <defs>
-    <filter id="marker-shape">
-      <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
-      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
-    </filter>
-  </defs>
-</svg>
-
-
 <Layout>
 	<Header />
 	<section class="fade-in-up py-5"><!-- Add some vertical spacing -->
@@ -329,6 +316,18 @@ import backgroundMain from '../assets/backgroundMain.svg';
 		</div>
 	</section>
 
+
+
+<svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+  <defs>
+    <filter id="marker-shape">
+      <feTurbulence type="fractalNoise" baseFrequency="0 0.25" numOctaves="1" result="warp" />
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+    </filter>
+  </defs>
+</svg>
+
+
 </Layout>
 
 <style>
@@ -374,6 +373,11 @@ import backgroundMain from '../assets/backgroundMain.svg';
 		text-align: left;
 		text-underline-position: from-font;
 		text-decoration-skip-ink: none;
+	}
+
+	.mark {
+		background-color: #bbd758a3;
+		border-radius: 20px;
 	}
 
 	.btn-hero {
