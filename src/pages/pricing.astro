@@ -23,11 +23,11 @@ import calculator from '../assets/calculator.png';
                     <p class="fs-4">
                         Prospector doesn't deal in complicated pricing models or complex contracts.
                         The services offered are included in
-                        <span class="mark">flat rate, easy to manage packages.</span>
+                        <span class="realistic-marker-highlight">flat rate, easy to manage packages.</span>
                     </p>
                     <p class="fs-4">
                         No more juggling licenses from dozens of vendors, and
-                        <span class="mark">no more hidden fees</span>.
+                        <span class="realistic-marker-highlight">no more hidden fees</span>.
                         Prospector plans are designed to provide you with fully integrated security operations
                         team - backed by the best security technology available.
                     </p>
@@ -167,7 +167,7 @@ import calculator from '../assets/calculator.png';
                 <div class="col-md-8">
                     <h2 class="fw-bold mb-3" style="font-size: 24px; line-height: 24px;">ADVANCED EMAIL SECURITY</h2>
                     <p>
-                        Enhance your email protection with our Advanced Email Security Bundle. Building upon the robust safeguards of the Foundations package we add <span class="mark">next generation email filtering</span>, plus an engaging <span class="mark">training program</span> for your entire team, providing even greater protection for your critical business communications.
+                        Enhance your email protection with our Advanced Email Security Bundle. Building upon the robust safeguards of the Foundations package we add <span class="realistic-marker-highlight">next generation email filtering</span>, plus an engaging <span class="realistic-marker-highlight">training program</span> for your entire team, providing even greater protection for your critical business communications.
                     </p>
                     <div class="row">
                         <div class="row" style="font-weight: 500; color: #0B232B; font-size: 15px; line-height: 32px;">
@@ -255,7 +255,7 @@ import calculator from '../assets/calculator.png';
 
                     <h1 style="font-size: 33px; line-height: 36px" class="fw-bold">   USER BACKUP AND DISASTER RECOVERY</h1>
                     <p>
-                        Microsoft 365 SaaS backup will maintain your content and data in the event of an incident or loss. Comprehensive backup ensures access to your information whatever the circumstance. Microsoft recommends <span class="mark">regular backups of your content and data</span> within their service offerings by using a Third-Party Service like Prospector.*
+                        Microsoft 365 SaaS backup will maintain your content and data in the event of an incident or loss. Comprehensive backup ensures access to your information whatever the circumstance. Microsoft recommends <span class="realistic-marker-highlight">regular backups of your content and data</span> within their service offerings by using a Third-Party Service like Prospector.*
 
                     <p class="fw-bold">Microsoft 365 Backup and Recovery includes:</p>
 
@@ -286,7 +286,7 @@ import calculator from '../assets/calculator.png';
 
                     <h1 style="font-size: 33px; line-height: 36px" class="fw-bold"> SERVER BACKUP AND DISASTER RECOVERY</h1>
                     <p>
-                        Unexpected events like hardware failure or natural disasters can happen anytime. Backup and Disaster Recovery ensures your business can recover quickly, <span class="mark">minimizing downtime and disruption.</span> With reliable data protection, you can focus on growth, knowing your systems are secure.
+                        Unexpected events like hardware failure or natural disasters can happen anytime. Backup and Disaster Recovery ensures your business can recover quickly, <span class="realistic-marker-highlight">minimizing downtime and disruption.</span> With reliable data protection, you can focus on growth, knowing your systems are secure.
                     <p class="fw-bold">Server Backup and Recovery includes:</p>
 
                     <ol>
@@ -503,7 +503,14 @@ import calculator from '../assets/calculator.png';
     });
   </script>
 </section>
-
+<svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+  <defs>
+    <filter id="marker-shape">
+      <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+    </filter>
+  </defs>
+</svg>
 
 </Layout>
 
@@ -518,6 +525,8 @@ import calculator from '../assets/calculator.png';
         border-radius: 20px;
         padding: 0;
     }
+	
+	
 
     .btn-hero {
         background-color: #bbd758;
@@ -556,4 +565,22 @@ import calculator from '../assets/calculator.png';
 
     }
 
+
+	.realistic-marker-highlight{
+	  position:relative;
+	}
+
+	.realistic-marker-highlight:before{
+	  content:"";
+	  background-color:#bbd758a3;
+	  width:100%;
+	  height:1em;
+	  position:absolute;
+	  z-index:-1;
+	  filter:url(#marker-shape);
+	  left:-0.25em;
+	  top:0.1em;
+	  padding:0 0.25em;
+	}
+	
 </style>
