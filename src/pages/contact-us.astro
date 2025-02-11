@@ -28,47 +28,76 @@ import aboutHero from '../assets/aboutHero.svg';
             
             <!-- Right Section: Form -->
             <div class="col-md-7">
-              <form class="p-4 shadow rounded bg-white">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                  <label for="phone" class="form-label">Phone</label>
-                  <input type="tel" class="form-control" id="phone" required>
-                </div>
-                <div class="mb-3">
-                  <label for="company" class="form-label">Company</label>
-                  <input type="text" class="form-control" id="company">
-                </div>
-                <div class="py-3">
-                    <button type="submit" class="btn btn-hero btn-lg">Submit
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="22"
-                          height="22"
-                          fill="currentColor"
-                          class="bi bi-arrow-right-circle align-middle ms-2"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                          />
-                        </svg>
-                    </button>
-                </div>
-              </form>
+                <form id="contactForm" class="p-4 shadow rounded bg-white">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="company" class="form-label">Company</label>
+                        <input type="text" class="form-control" id="company">
+                    </div>
+                    <div class="py-3">
+                        <button type="submit" class="btn btn-hero btn-lg">Submit
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="22"
+                                    height="22"
+                                    fill="currentColor"
+                                    class="bi bi-arrow-right-circle align-middle ms-2"
+                                    viewBox="0 0 16 16"
+                            >
+                                <path
+                                        fill-rule="evenodd"
+                                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
           </div>
         </div>
       </section>
 
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          phone: document.getElementById('phone').value,
+          company: document.getElementById('company').value
+        };
+
+        fetch('https://formspree.io/f/xwpvbgnv', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Success:', data);
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+      });
+    </script>
+
 </Layout>
+
 
 <style>
 
@@ -86,29 +115,26 @@ import aboutHero from '../assets/aboutHero.svg';
   padding: 10px 20px;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem; /* Extra spacing between text and icon if needed */
+  gap: 0.5rem;
 }
 
 .bg-gradient-x {
   background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%); !important;
 }
 
-/* Style for form inputs with bottom border only */
 input.form-control {
-  border: none; /* Remove all borders */
-  border-bottom: 2px solid #0B232B; /* Add bottom border */
-  border-radius: 0; /* Remove rounded corners */
-  box-shadow: none; /* Remove shadow */
-  padding: 8px 0; /* Adjust padding to align with bottom border */
+  border: none;
+  border-bottom: 2px solid #0B232B;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 8px 0;
 }
 
-/* Focus state for input fields */
 input.form-control:focus {
-  outline: none; /* Remove the default focus outline */
-  border-bottom: 2px solid #bbd758; /* Change the bottom border color on focus */
+  outline: none;
+  border-bottom: 2px solid #bbd758;
 }
 
-/* Optional: Style the labels to match the form style */
 label.form-label {
   font-weight: 600;
 }
