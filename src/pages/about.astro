@@ -186,7 +186,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
                     <!-- Leader 1 -->
                     <div class="carousel-item active">
-                        <div class=" card w-100">
+                        <div class="card w-100 border-0 h-100">
                             <div class="leader-card d-flex flex-column flex-md-row align-items-center text-center text-md-start">
 
                                 <div
@@ -195,7 +195,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
                   background-image: url(${backgroundMain.src});
                   background-size: cover;
                   background-position: center;
-                  min-height: 300px;
+                  min-height: 400px;
                   width: 100%;
                 `}
                                 >
@@ -223,7 +223,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
                     <!-- Leader 2 -->
                     <div class="carousel-item">
-                        <div class="card mx-auto" style="max-width: 986px;">
+                        <div class="card w-100 border-0 h-100" >
                             <div class="leader-card d-flex flex-column flex-md-row align-items-center text-center text-md-start">
 
                                 <div
@@ -232,7 +232,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
                   background-image: url(${backgroundMain.src});
                   background-size: cover;
                   background-position: center;
-                  min-height: 300px;
+                  min-height: 400px;
                   width: 100%;
                   z-index: 10;
                 `}
@@ -261,7 +261,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
                     <!-- Leader 3 -->
                     <div class="carousel-item">
-                        <div class="card w-100">
+                        <div class="card w-100 border-0 h-100">
                             <div class="leader-card d-flex flex-column flex-md-row align-items-center text-center text-md-start">
 
                                 <div
@@ -270,7 +270,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
       background-image: url(${backgroundMain.src});
       background-size: cover;
       background-position: center;
-      min-height: 300px;
+      min-height: 400px;
       width: 100%;
     `}
                                 >
@@ -352,16 +352,16 @@ import backgroundMain from '../assets/backgroundMain.svg';
             <div class="col-md-5">
               <h2 class="fw-bold mb-4" style="font-size: 64px; line-height: 79px;">Schedule an<br> Introduction</h2>
               <p class="mb-3 py-2" style="font-size: 18px; line-height: 22px;">
-                Reach out today to see how we can help your organization get to the next level, 
+                Reach out today to see how we can help your organization get to the next level,
                 by implementing world-class cybersecurity - without the overhead.
               </p>
               <h4 class="fw-bold mt-4" style="font-size: 24px;">Still want more information?</h4>
               <p style="font-size: 18px; line-height: 22px;">
-                Prospector FAQs are also a great place to learn more. You can also view service offerings 
+                Prospector FAQs are also a great place to learn more. You can also view service offerings
                 tailored to fit your needs and learn more about how Prospector can serve you.
               </p>
             </div>
-            
+
             <!-- Right Section: Form -->
             <div class="col-md-7">
               <form action="https://formspree.io/f/xwpvbgnv" method="POST" class="p-4 shadow rounded bg-white">
@@ -423,8 +423,6 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
     .leader-card {
         background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);
-        //height: 406px;
-        //width: 986px;
     }
 
     .btn-hero {
@@ -449,20 +447,23 @@ import backgroundMain from '../assets/backgroundMain.svg';
 }
 
 input.form-control {
-  border: none; /* Remove all borders */
-  border-bottom: 2px solid #0B232B; /* Add bottom border */
-  border-radius: 0; /* Remove rounded corners */
-  box-shadow: none; /* Remove shadow */
-  padding: 8px 0; /* Adjust padding to align with bottom border */
+  border: none;
+  border-bottom: 2px solid #0B232B;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 8px 0;
 }
 
 input.form-control:focus {
-  outline: none; /* Remove the default focus outline */
-  border-bottom: 2px solid #bbd758; /* Change the bottom border color on focus */
+  outline: none;
+  border-bottom: 2px solid #bbd758;
 }
 
-/* Optional: Style the labels to match the form style */
 label.form-label {
   font-weight: 600;
 }
+
+#leadersCarousel .carousel-item {
+        width: 80%;
+    }
 </style>
