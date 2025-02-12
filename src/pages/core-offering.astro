@@ -3,7 +3,12 @@ import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 
 import backgroundMain from '../assets/backgroundMain.svg';
-
+import magnifyingLaptop from '../assets/magnifying-laptop.png';
+import moneyShield from '../assets/money-shield.png';
+import dashboard from '../assets/dashboard.png';
+import w247 from '../assets/247.png';
+import talk from '../assets/talk.png';
+import addOn from '../assets/add-on.png';
 ---
 
 <Layout>
@@ -123,31 +128,65 @@ import backgroundMain from '../assets/backgroundMain.svg';
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="row">
-                        <p style="font-size: 24px; font-weight: 700; ">Comprehensive Protection</p>
-                        <p>Covers endpoint security, identity monitoring, vulnerability scanning, and DNS filtering in one streamlined package.</p>
+                    <div class="row align-items-center mb-4">
+                        <div class="col-3 text-center">
+                            <img src={magnifyingLaptop.src} alt="Protection Icon" class="img-fluid rounded">
+                        </div>
+                        <div class="col-9">
+                            <p style="font-size: 24px; font-weight: 700;">Comprehensive Protection</p>
+                            <p>Covers endpoint security, identity monitoring, vulnerability scanning, and DNS filtering in one streamlined package.</p>
+                        </div>
                     </div>
-                    <div class="row">
-                        <p style="font-size: 24px; font-weight: 700; ">Exceptional Value</p>
-                        <p>Get complete cyber protection against modern threats for just <span class="fw-bold">$18 per month</span> per user. <span class="fw-fold">Flat-rate pricing</span> that scales with your business, no hidden fees or surprises.</p>
+
+                    <div class="row align-items-center mb-4">
+                        <div class="col-3 text-center">
+                            <img src={moneyShield.src} alt="Value Icon" class="img-fluid rounded">
+                        </div>
+                        <div class="col-9">
+                            <p style="font-size: 24px; font-weight: 700;">Exceptional Value</p>
+                            <p>Get complete cyber protection against modern threats for just <span class="fw-bold">$18 per month</span> per user. <span class="fw-bold">Flat-rate pricing</span> that scales with your business, no hidden fees or surprises.</p>
+                        </div>
                     </div>
-                    <div class="row">
-                        <p style="font-size: 24px; font-weight: 700; ">Simplified Management</p>
-                        <p>Eliminate the complexity of managing multiple vendors—one package, one team, complete peace of mind.</p>
+
+                    <div class="row align-items-center">
+                        <div class="col-3 text-center">
+                            <img src={dashboard.src} alt="Management Icon" class="img-fluid rounded">
+                        </div>
+                        <div class="col-9">
+                            <p style="font-size: 24px; font-weight: 700;">Simplified Management</p>
+                            <p>Eliminate the complexity of managing multiple vendors—one package, one team, complete peace of mind.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="row">
-                        <p style="font-size: 24px; font-weight: 700; ">Proactive Defense</p>
-                        <p><span class="fw-bold">24/7 monitoring</span> and SOC-backed response ensure threats are detected and mitigated before they impact your business.</p>
+                    <div class="row align-items-center mb-4">
+                        <div class="col-3 text-center">
+                            <img src={w247.src} alt="Defense Icon" class="img-fluid rounded">
+                        </div>
+                        <div class="col-9">
+                            <p style="font-size: 24px; font-weight: 700;">Proactive Defense</p>
+                            <p><span class="fw-bold">24/7 monitoring</span> and SOC-backed response ensure threats are detected and mitigated before they impact your business.</p>
+                        </div>
                     </div>
-                    <div class="row">
-                        <p style="font-size: 24px; font-weight: 700; ">Focus on What Matters</p>
-                        <p>Protect against the top breach vectors—phishing, account compromise, and cloud vulnerabilities—without paying for unnecessary services.</p>
+
+                    <div class="row align-items-center mb-4">
+                        <div class="col-3 text-center">
+                            <img src={talk.src} alt="Focus Icon" class="img-fluid rounded">
+                        </div>
+                        <div class="col-9">
+                            <p style="font-size: 24px; font-weight: 700;">Focus on What Matters</p>
+                            <p>Protect against the top breach vectors—phishing, account compromise, and cloud vulnerabilities—without paying for unnecessary services.</p>
+                        </div>
                     </div>
-                    <div class="row">
-                        <p style="font-size: 24px; font-weight: 700; ">Customizable Add-Ons</p>
-                        <p>Tailor your security stack with optional advanced email security, employee awareness training, cloud SaaS backups, and managed endpoint backup and disaster recovery services.</p>
+
+                    <div class="row align-items-center">
+                        <div class="col-3 text-center">
+                            <img src={addOn.src} alt="Customizable Icon" class="img-fluid rounded">
+                        </div>
+                        <div class="col-9">
+                            <p class="fs-4 fw-bold lh-sm">Customizable Add-Ons</p>
+                            <p class="fs-6">Tailor your security stack with optional advanced email security, employee awareness training, cloud SaaS backups, and managed endpoint backup and disaster recovery services.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,7 +194,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
         </div>
     </section>
 
-    <section class="py-5 bg-gradient-x">
+    <section class="py-5 bg-gradient-x" style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Left Section -->
@@ -212,6 +251,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
             </div>
         </div>
     </section>
+
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
