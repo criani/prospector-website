@@ -6,6 +6,9 @@ import aboutHero from '../assets/aboutHero.svg';
 import assessment from '../assets/magnifying-laptop.png';
 import consulting from '../assets/consulting.png';
 import compliance from '../assets/laptop-badge.png';
+import component1 from '../assets/Component1.svg';
+import component2 from '../assets/Component2.svg';
+import component3 from '../assets/Component3.svg';
 
 import dustin from '../assets/dustin.avif';
 import chris from '../assets/chris.avif';
@@ -74,7 +77,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
         </div>
     </section>
       <section>
-		<div class="container py-5">
+		<div class="container py-3">
 		  <div class="row">
 			<!-- Text Section -->
 			<div class="col-md-12">
@@ -88,17 +91,24 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
 
 
-    <section class="py-5">
+    <section class="py-4">
         <div class="container">
 
-            <div class="row mb-5 py-3">
+            <div class="row mb-3 py-3">
                 <div class="col-md-6 d-flex align-items-start">
-                    <img
-                            src={assessment.src}
-                            alt="Top Aligned"
-                            class="img-fluid me-3"
-                            style="width: auto; max-width: 150px;"
-                    />
+                    <div style="position: relative; display: inline-block;">
+                        <img
+                                src={assessment.src}
+                                alt="Top Aligned"
+                                class="img-fluid me-3"
+                                style="width: auto; max-width: 240px; position: relative; z-index: 1;"
+                        />
+                        <img
+                                src={component1.src}
+                                alt="Background"
+                                style="position: absolute; top: -80px; left: -10px; width: auto; max-width: 280px; z-index: -1;"
+                        />
+                    </div>
                     <div>
                         <h3 class="fw-bold fs-4">
                             1. Assessment
@@ -110,14 +120,21 @@ import backgroundMain from '../assets/backgroundMain.svg';
                 </div>
             </div>
 
-            <div class="row mb-5 py-3">
+            <div class="row mb-3 py-3">
                 <div class="col-md-6 offset-md-3 d-flex align-items-center">
-                    <img
-                            src={consulting.src}
-                            alt="Middle Aligned"
-                            class="img-fluid me-3"
-                            style="width: auto; max-width: 150px;"
-                    />
+                    <div style="position: relative; display: inline-block;">
+                        <img
+                                src={consulting.src}
+                                alt="Top Aligned"
+                                class="img-fluid me-3"
+                                style="width: auto; max-width: 240px; position: relative; z-index: 1;"
+                        />
+                        <img
+                                src={component2.src}
+                                alt="Background"
+                                style="position: absolute; top: -100px; left: -10px; width: auto; max-width: 290px; z-index: -1;"
+                        />
+                    </div>
                     <div>
                         <h3 class="fw-bold fs-4">
                             2. Consulting
@@ -131,12 +148,19 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
             <div class="row py-3">
                 <div class="col-md-6 d-flex align-items-end ms-auto">
-                    <img
-                            src={compliance.src}
-                            alt="Bottom Aligned"
-                            class="img-fluid me-3"
-                            style="width: auto; max-width: 150px;"
-                    />
+                    <div style="position: relative; display: inline-block;">
+                        <img
+                                src={compliance.src}
+                                alt="Top Aligned"
+                                class="img-fluid me-3"
+                                style="width: auto; max-width: 240px; position: relative; z-index: 1;"
+                        />
+                        <img
+                                src={component3.src}
+                                alt="Background"
+                                style="position: absolute; top: -100px; left: -10px; width: auto; max-width: 280px; z-index: -1;"
+                        />
+                    </div>
                     <div>
                         <h3 class="fw-bold fs-4">
                             3. Compliance
@@ -162,8 +186,8 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
                     <!-- Leader 1 -->
                     <div class="carousel-item active">
-                        <div class="card mx-auto" style="max-width: 986px;">
-                            <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start">
+                        <div class="card w-100 border-0 h-100">
+                            <div class="leader-card d-flex flex-column flex-md-row align-items-center text-center text-md-start">
 
                                 <div
                                   class="p-3 d-flex flex-column justify-content-center"
@@ -171,7 +195,7 @@ import backgroundMain from '../assets/backgroundMain.svg';
                   background-image: url(${backgroundMain.src});
                   background-size: cover;
                   background-position: center;
-                  min-height: 300px;
+                  min-height: 400px;
                   width: 100%;
                 `}
                                 >
@@ -199,8 +223,8 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
                     <!-- Leader 2 -->
                     <div class="carousel-item">
-                        <div class="card mx-auto" style="max-width: 986px;">
-                            <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start">
+                        <div class="card w-100 border-0 h-100" >
+                            <div class="leader-card d-flex flex-column flex-md-row align-items-center text-center text-md-start">
 
                                 <div
                                   class="p-3 d-flex flex-column justify-content-center"
@@ -208,8 +232,9 @@ import backgroundMain from '../assets/backgroundMain.svg';
                   background-image: url(${backgroundMain.src});
                   background-size: cover;
                   background-position: center;
-                  min-height: 300px;
+                  min-height: 400px;
                   width: 100%;
+                  z-index: 10;
                 `}
                                 >
                                     <img
@@ -236,24 +261,24 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
                     <!-- Leader 3 -->
                     <div class="carousel-item">
-                        <div class="card mx-auto" style="max-width: 986px;">
-                            <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start">
+                        <div class="card w-100 border-0 h-100">
+                            <div class="leader-card d-flex flex-column flex-md-row align-items-center text-center text-md-start">
 
                                 <div
-                                  class="p-3 d-flex flex-column justify-content-center"
-                                  style={`
-                  background-image: url(${backgroundMain.src});
-                  background-size: cover;
-                  background-position: center;
-                  min-height: 300px;
-                  width: 100%;
-                `}
+                                        class="p-3 d-flex flex-column justify-content-center"
+                                        style={`
+      background-image: url(${backgroundMain.src});
+      background-size: cover;
+      background-position: center;
+      min-height: 400px;
+      width: 100%;
+    `}
                                 >
                                     <img
-                                      src={logan.src}
-                                      alt="Logan Abell"
-                                      class="img-fluid mx-auto"
-                                      style="max-width: 150px; height: auto; border-radius: 8px;"
+                                            src={logan.src}
+                                            alt="Logan Abell"
+                                            class="img-fluid mx-auto"
+                                            style="max-width: 150px; height: auto; border-radius: 8px;"
                                     />
                                 </div>
 
@@ -275,42 +300,42 @@ import backgroundMain from '../assets/backgroundMain.svg';
 
                 <div class="d-flex justify-content-center mt-3">
                     <button
-                      class="btn btn-outline-secondary me-2"
-                      type="button"
-                      data-bs-target="#leadersCarousel"
-                      data-bs-slide="prev"
+                            class="btn btn-outline-secondary me-2"
+                            type="button"
+                            data-bs-target="#leadersCarousel"
+                            data-bs-slide="prev"
                     >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-arrow-left"
-                          viewBox="0 0 16 16"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-arrow-left"
+                                viewBox="0 0 16 16"
                         >
                             <path
-                              fill-rule="evenodd"
-                              d="M15 8a.5.5 0 0 1-.5.5H3.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L3.707 7.5H14.5a.5.5 0 0 1 .5.5z"
+                                    fill-rule="evenodd"
+                                    d="M15 8a.5.5 0 0 1-.5.5H3.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L3.707 7.5H14.5a.5.5 0 0 1 .5.5z"
                             />
                         </svg>
                     </button>
                     <button
-                      class="btn btn-outline-secondary"
-                      type="button"
-                      data-bs-target="#leadersCarousel"
-                      data-bs-slide="next"
+                            class="btn btn-outline-secondary"
+                            type="button"
+                            data-bs-target="#leadersCarousel"
+                            data-bs-slide="next"
                     >
                         <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-arrow-right"
-                          viewBox="0 0 16 16"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-arrow-right"
+                                viewBox="0 0 16 16"
                         >
                             <path
-                              fill-rule="evenodd"
-                              d="M1 8a.5.5 0 0 1 .5-.5h10.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L12.293 8.5H1.5a.5.5 0 0 1-.5-.5z"
+                                    fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h10.793l-3.147-3.146a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L12.293 8.5H1.5a.5.5 0 0 1-.5-.5z"
                             />
                         </svg>
                     </button>
@@ -327,16 +352,16 @@ import backgroundMain from '../assets/backgroundMain.svg';
             <div class="col-md-5">
               <h2 class="fw-bold mb-4" style="font-size: 64px; line-height: 79px;">Schedule an<br> Introduction</h2>
               <p class="mb-3 py-2" style="font-size: 18px; line-height: 22px;">
-                Reach out today to see how we can help your organization get to the next level, 
+                Reach out today to see how we can help your organization get to the next level,
                 by implementing world-class cybersecurity - without the overhead.
               </p>
               <h4 class="fw-bold mt-4" style="font-size: 24px;">Still want more information?</h4>
               <p style="font-size: 18px; line-height: 22px;">
-                Prospector FAQs are also a great place to learn more. You can also view service offerings 
+                Prospector FAQs are also a great place to learn more. You can also view service offerings
                 tailored to fit your needs and learn more about how Prospector can serve you.
               </p>
             </div>
-            
+
             <!-- Right Section: Form -->
             <div class="col-md-7">
               <form action="https://formspree.io/f/xwpvbgnv" method="POST" class="p-4 shadow rounded bg-white">
@@ -391,15 +416,46 @@ import backgroundMain from '../assets/backgroundMain.svg';
         line-height: 79px;
         font-family: 'Kumbh Sans', sans-serif;
     }
-	.mark {
-		background-color: #bbd758a3;
-		border-radius: 20px;
-	}
+
+    .mark {
+        position: relative;
+        display: inline;
+        isolation: isolate;
+        padding: 0 4px;
+        font-weight: inherit;
+        color: inherit;
+        background: none;
+    }
+
+    .mark::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10%;
+        height: 70%;
+        background-color: #bbd758a3;
+        border-radius: 12px;
+        z-index: -1;
+        transform: skew(-3deg) rotate(-3deg);
+    }
+
+    .mark::after {
+        content: "";
+        position: absolute;
+        left: 2%;
+        right: -2%;
+        bottom: 20%;
+        height: 60%;
+        background-color: #bbd758a3;
+        border-radius: 12px;
+        z-index: -1;
+        transform: skew(2deg) rotate(2deg);
+        opacity: 0.8;
+    }
 
     .leader-card {
         background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%);
-        height: 406px;
-        width: 986px;
     }
 
     .btn-hero {
@@ -424,20 +480,25 @@ import backgroundMain from '../assets/backgroundMain.svg';
 }
 
 input.form-control {
-  border: none; /* Remove all borders */
-  border-bottom: 2px solid #0B232B; /* Add bottom border */
-  border-radius: 0; /* Remove rounded corners */
-  box-shadow: none; /* Remove shadow */
-  padding: 8px 0; /* Adjust padding to align with bottom border */
+  border: none;
+  border-bottom: 2px solid #0B232B;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 8px 0;
 }
 
 input.form-control:focus {
-  outline: none; /* Remove the default focus outline */
-  border-bottom: 2px solid #bbd758; /* Change the bottom border color on focus */
+  outline: none;
+  border-bottom: 2px solid #bbd758;
 }
 
-/* Optional: Style the labels to match the form style */
 label.form-label {
   font-weight: 600;
 }
+
+
+    #leadersCarousel .carousel-item {
+        flex: 70%;
+    }
+
 </style>

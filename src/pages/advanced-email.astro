@@ -274,9 +274,40 @@ import backgroundMain from '../assets/backgroundMain.svg';
         list-style-type: none;
     }
     .mark {
+        position: relative;
+        display: inline;
+        isolation: isolate;
+        padding: 0 4px;
+        font-weight: inherit;
+        color: inherit;
+        background: none;
+    }
+
+    .mark::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10%;
+        height: 70%;
         background-color: #bbd758a3;
-        border-radius: 20px;
-        padding: 0;
+        border-radius: 12px;
+        z-index: -1;
+        transform: skew(-3deg) rotate(-3deg);
+    }
+
+    .mark::after {
+        content: "";
+        position: absolute;
+        left: 2%;
+        right: -2%;
+        bottom: 20%;
+        height: 60%;
+        background-color: #bbd758a3;
+        border-radius: 12px;
+        z-index: -1;
+        transform: skew(2deg) rotate(2deg);
+        opacity: 0.8;
     }
 
     .btn-hero {
