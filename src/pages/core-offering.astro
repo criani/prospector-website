@@ -2,16 +2,8 @@
 import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 
-import homeHero from '../assets/homeHero.svg';
-import homeSecondary from '../assets/homeSecondary.svg';
-import cardImg1 from '../assets/cardImg1.png';
-import cardImg2 from '../assets/cardImg2.png';
-import cardImg3 from '../assets/cardImg3.svg';
-import cardImg4 from '../assets/cardImg4.png';
 import backgroundMain from '../assets/backgroundMain.svg';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
@@ -26,19 +18,91 @@ import backgroundMain from '../assets/backgroundMain.svg';
                         <p class="fw-bold" style="font-size: 24px; line-height: 29px; color: #2A2B2C">
                             Exceptional Value •   24/7 Protection  •  Streamlined Support  •  Future-Ready
                         </p>
-                        <p style="font-size: 24px; line-height: 29px;">
+                        <p class="fs-5">
                             The Foundations™ Package is an innovative security solution designed to protect your modern business from modern threats.
                             It provides <span class="mark">24/7 monitoring</span> and <span class="mark">rapid response</span> to keep your systems safe, strengthens your defenses to prevent attacks, and ensures you're always one step ahead of potential risks.
                             With clear reporting and proactive protection, it simplifies security so you can focus on running your business with peace of mind, all at an<span class="mark"> affordable price</span>.
                         </p>
+                        <a href="/contact-us/" class="btn btn-hero btn-lg">
+                            Get Started
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="22"
+                              height="22"
+                              fill="currentColor"
+                              class="bi bi-arrow-right-circle align-middle ms-2"
+                              viewBox="0 0 16 16"
+                            >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                                />
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="col-6 mx-auto" style="color: #0B232B;">
-                    <p style="font-size: 24px; line-height: 29px;">
-                        The Foundations™ Package is an innovative security solution designed to protect your modern business from modern threats.
-                        It provides <span class="mark">24/7 monitoring</span> and <span class="mark">rapid response</span> to keep your systems safe, strengthens your defenses to prevent attacks, and ensures you're always one step ahead of potential risks.
-                        With clear reporting and proactive protection, it simplifies security so you can focus on running your business with peace of mind, all at an<span class="mark"> affordable price</span>.
-                    </p>
+                <div class="col-6 mx-auto d-flex justify-content-center py-5" style="color: #0B232B; background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%); border-radius: 20px;">
+                    <div
+                      class="col-md-12 text-center mb-4 mb-md-0"
+                      style={`background-image: url(${backgroundMain.src}); background-size: cover; background-position: center; height: 400px;`}
+                    >
+                        <div class="d-flex flex-column h-100 justify-content-center">
+                            <div class="text-center my-3">
+                                <div class="row justify-content-center">
+                                    <div class="col-3">
+                                        <span class="display-4 fw-bold ">$<span class="super" style="font-size: 128px;">18</span></span>
+                                    </div>
+                                    <div class="col-5 d-flex flex-column justify-content-center text-start ">
+                                        <span class="fw-bold" style="font-size: 40px; line-height: 1;">per user</span>
+                                        <span class="fw-bold" style="font-size: 40px; line-height: 1;">per month</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center fw-bold fs-5">
+                                Personalized protection includes:
+                            </div>
+                            <div class="align-self-center" style="text-align: left">
+                                <ol style="text-decoration: none; list-style-type: none; font-weight: 600; line-height: 35px" class="lh-2">
+                                    <li>
+                                  <span class="fw-bold" style="color: #bbd758;">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square me-2" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/></svg>
+                                  </span>
+                                        Managed Endpoint Protection</li>
+                                    <li>
+                                <span class="fw-bold" style="color: #bbd758;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square me-2" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/></svg>
+                                </span>                                   Microsoft 365 Security Monitoring</li>
+                                    <li>
+                                <span class="fw-bold" style="color: #bbd758;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square me-2" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/></svg>
+                                </span>                                   24/7 Threat Detection and Incident Response</li>
+                                    <li>
+                                <span class="fw-bold" style="color: #bbd758;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square me-2" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/></svg>
+                                </span>                                   Proactive Security Hardening</li>
+                                    <li>
+                                <span class="fw-bold" style="color: #bbd758;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square me-2" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/></svg>
+                                </span>                                   Cloud Security Posture Management</li>
+                                    <li>
+                                <span class="fw-bold" style="color: #bbd758;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square me-2" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/></svg>
+                                </span>                                   Monthly Vulnerability Scanning</li>
+
+                                    <li>
+                                <span class="fw-bold" style="color: #bbd758;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square me-2" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/></svg>
+                                </span>                                   Secure Web Filtering</li>
+                                    <li>
+                                <span class="fw-bold" style="color: #bbd758;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square me-2" viewBox="0 0 16 16"><path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/><path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/></svg>
+                                </span>                                   Clear, Actionable Reporting</li>
+
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -180,6 +244,24 @@ import backgroundMain from '../assets/backgroundMain.svg';
 </Layout>
 
 <style>
+
+    .btn-hero {
+        background-color: #bbd758;
+        color: #0b232b;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 27.29px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
     .mark {
         position: relative;
         display: inline;
