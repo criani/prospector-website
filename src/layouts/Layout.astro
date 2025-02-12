@@ -1,3 +1,6 @@
+---
+import Footer from "src/components/Footer.astro";
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -13,22 +16,43 @@
 	</head>
 	<body>
 		<slot />
+
+		<footer class="footer">
+			<div class="container">
+				<p>©2024 Prospector Security, LLC</p>
+			</div>
+		</footer>
+
+		<style>
+			html,
+			body {
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				font-family: "Kumbh Sans", serif;
+				color: #0B232B;
+				background-color: #fff;
+			}
+
+			a {
+				color: #427587; !important;
+			}
+
+			.footer {
+				background-color: #0B232B;
+				color: white;
+				text-align: center;
+				padding: 15px 0;
+				font-size: 1rem;
+				font-weight: 500;
+				border-top: 2px solid #B0B0B0;
+			}
+
+			.footer p {
+				margin: 0;
+			}
+		</style>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		font-family: "Kumbh Sans", serif;
-		color: #0B232B;
-		background-color: #fff;
-	}
-
-	a {
-		color: #427587; !important;
-	}
-</style>
