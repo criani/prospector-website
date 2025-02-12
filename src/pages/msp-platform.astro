@@ -1,6 +1,11 @@
 ---
 import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
+
+import mspMain from '../assets/msp-main.png';
+import component from '../assets/component2.svg';
+import msp31 from '../assets/msp3-1.png';
+import msp32 from '../assets/msp3-2.png';
 ---
 
 <Layout>
@@ -9,8 +14,8 @@ import Layout from '../layouts/Layout.astro';
     <section class="py-5 bg-light">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-12 mb-4 mb-lg-0">
-                    <h1 class="display-4 fw-bold">
+                <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                    <h1 class="display-5 fw-bold">
                         Vulnerability Assessment: Built for MSPs
                     </h1>
                     <div class="mt-4">
@@ -20,16 +25,121 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 text-dark">
-                    <p class="fs-4">
-                        Welcome to a brand new platform by Prospector - designed from the ground up for our MSP partners.
+                    <p class="fs-5">
+                        Welcome to a <span class="mark">brand new platform</span> by Prospector - designed from the ground up for our MSP partners.
                         Prospector's Scan Platform offers cloud hosted vulnerability scanning, proprietary attack surface
                         risk discovery, cloud scanning, dark web monitoring and more... all with beautiful client-ready reports.
                     </p>
-                    <p class="fs-4">
-                        Implement comprehensive risk scanning for your clients and prospects today, without breaking the bank.
-                        This MSP-ready scanning platform offers unlimited clients, unlimited scans, and all features are
-                        available at no additional cost.
+                    <p class="fs-5">
+                        Implement <span class="mark">comprehensive risk scanning</span> for your clients and prospects today, without breaking the bank.
+                        This MSP-ready scanning platform offers unlimited clients, unlimited scans, and all features are available at no additional cost.
                     </p>
+
+                    <div>
+                        <a href="/contact-us/" class="btn btn-hero btn-lg d-inline-flex align-items-center">
+                            Try it Free
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="22"
+                              height="22"
+                              fill="currentColor"
+                              class="bi bi-arrow-right-circle align-middle ms-2"
+                              viewBox="0 0 16 16"
+                            >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                                />
+                            </svg>
+                        </a>
+                        <a href="/contact-us/" class="btn btn-hero2 btn-lg d-inline-flex align-items-center">
+                            Request a Demo
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="22"
+                              height="22"
+                              fill="currentColor"
+                              class="bi bi-arrow-right-circle align-middle ms-2"
+                              viewBox="0 0 16 16"
+                            >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-3">
+            <div class="row">
+                <!-- Text Section -->
+                <div class="col-md-12">
+                    <h2 class="fw-bold mb-4 slide-in-left" style="font-size: 55px;">Designed For Growing MSPs.</h2>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-2">
+        <div class="container-xl">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start position-relative slide-in-left">
+                    <img src={component.src} alt="Background" class="img-fluid rounded position-absolute" style="left: -72px; z-index: -1; width: 59%;">
+                    <img src={mspMain.src} alt="Description" class="img-fluid rounded">
+                </div>
+
+                <!-- Right: Text with Background -->
+                <div class="col-md-6 slide-in-right" style="background: linear-gradient(180deg, #F3F3F4 48.5%, #EAFBFF 100%); border-radius: 20px;">
+                    <div class="text-box p-4">
+                        <p class="fs-5">
+                            "I built Prospector's Scanning Platform out of necessity. Like many MSP and cybersecurity professionals, I was spending countless hours on manual asset discovery, scanning with tools that either underperformed or were too costly for MSPs. I knew there had to be a better way."
+                        </p>
+                        <div class="fw-bold lh-1 py-2">
+                            <p class="fs-5"> &mdash; Chris Riani, CISSP</p>
+                            <p>Founder & Principal Security Consultant</p>
+                            <p>Prospector Security</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container-xl">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-md-6 d-flex flex-column slide-in-left">
+                    <h3 class="pb-2 fw-bold display-6 text-uppercase">Instant Remediation plans for you and your clients</h3>
+                    <p class="fs-5">
+                        Using the same toolset as the Prospector team, you can create an external risk assessment report for all of your clients today - no payment info required.
+                    </p>
+                    <p class="fs-5">
+                        Prospector remediation reports support the MSP well beyond pre-sale engagements. Our assessment modules can be run against existing clients to provide a great option for ongoing vulnerability scanning, monthly assessments, QBR's and more - with customized reports to meet a variety of scenarios.                    </p>
+                        <div class="text-center d-flex justify-content-center position-relative scale-in delay-1">
+                            <img src={component.src} alt="Background" class="img-fluid rounded position-absolute" style="left: -72px; z-index: -1; width: 59%;">
+                            <img src={msp31.src} alt="Description" class="img-fluid rounded">
+                        </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-md-6 d-flex flex-column slide-in-right">
+                    <h3 class="pb-2 fw-bold display-6 text-uppercase">client ready Security insights  at the touch of a button</h3>
+                    <p class="fs-5">
+                        You can create an external risk assessment report for all of your clients today - no payment info required. </p>
+                    <p class="fs-5">
+                        "I had been doing a lot of this work already for pre-sale assessments, the manual way, for some time. I knew there had to be a better way, that didn't involve me taking half a day per prospect - just to have the sale not pan out. Prospector cuts that time down to minutes and has saved me tons of time!"    <div class="text-center d-flex justify-content-center position-relative">
+                        <div class="scale-in delay-1">
+                            <img src={component.src} alt="Background" class="img-fluid rounded position-absolute" style="right: -72px; z-index: -1; width: 59%;">
+                            <img src={msp32.src} alt="Description" class="img-fluid rounded">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,12 +216,13 @@ import Layout from '../layouts/Layout.astro';
 <style>
     .mark {
         position: relative;
-        display: inline;
+        display: inline-block;
         isolation: isolate;
         padding: 0 4px;
         font-weight: inherit;
         color: inherit;
         background: none;
+        line-height: 1.3;
     }
 
     .mark::before {
@@ -119,12 +230,12 @@ import Layout from '../layouts/Layout.astro';
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 10%;
+        bottom: 8%;
         height: 70%;
         background-color: #bbd758a3;
         border-radius: 12px;
         z-index: -1;
-        transform: skew(-3deg) rotate(-3deg);
+        transform: skew(-3deg) rotate(-1deg);
     }
 
     .mark::after {
@@ -132,7 +243,7 @@ import Layout from '../layouts/Layout.astro';
         position: absolute;
         left: 2%;
         right: -2%;
-        bottom: 20%;
+        bottom: 18%;
         height: 60%;
         background-color: #bbd758a3;
         border-radius: 12px;
@@ -140,12 +251,11 @@ import Layout from '../layouts/Layout.astro';
         transform: skew(2deg) rotate(2deg);
         opacity: 0.8;
     }
-
     .btn-hero {
         background-color: #bbd758;
         color: #0b232b;
         font-family: "Kumbh Sans", sans-serif;
-        font-size: 22px;
+        //font-size: 22px;
         font-weight: 700;
         line-height: 27.29px;
         text-align: left;
@@ -155,7 +265,27 @@ import Layout from '../layouts/Layout.astro';
         padding: 10px 20px;
         display: inline-flex;
         align-items: center;
+        gap: 0.5rem; /* Extra spacing between text and icon if needed */
+    }
+
+    .btn-hero2 {
+        background-color: #ffffff;
+        color: #0b232b;
+        border: 2px solid #bbd758;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 27.29px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 0.5rem;
+
     }
 
     .bg-gradient-x {
@@ -178,4 +308,79 @@ import Layout from '../layouts/Layout.astro';
     label.form-label {
         font-weight: 600;
     }
+
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Slide-in from left */
+    @keyframes slideInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* Slide-in from right */
+    @keyframes slideInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* Scale-in animation */
+    @keyframes scaleIn {
+        0% {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    /* Apply animations */
+    .fade-in {
+        animation: fadeIn 1s ease-out forwards;
+        opacity: 0;
+    }
+
+    .slide-in-left {
+        animation: slideInLeft 1s ease-out forwards;
+        opacity: 0;
+    }
+
+    .slide-in-right {
+        animation: slideInRight 1s ease-out forwards;
+        opacity: 0;
+    }
+
+    .scale-in {
+        animation: scaleIn 1s ease-out forwards;
+        opacity: 0;
+    }
+
+    /* Delay animations for a cascading effect */
+    .delay-1 { animation-delay: 0.3s; }
+    .delay-2 { animation-delay: 0.6s; }
+    .delay-3 { animation-delay: 0.9s; }
 </style>

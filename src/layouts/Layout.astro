@@ -32,13 +32,20 @@ import Footer from "src/components/Footer.astro";
 				font-family: "Kumbh Sans", serif;
 				color: #0B232B;
 				background-color: #fff;
+				display: flex;
+				flex-direction: column;
 			}
 
 			a {
 				color: #427587; !important;
 			}
 
+			.content {
+				flex: 1;
+			}
+
 			.footer {
+				width: 100%;
 				background-color: #0B232B;
 				color: white;
 				text-align: center;
@@ -50,6 +57,46 @@ import Footer from "src/components/Footer.astro";
 
 			.footer p {
 				margin: 0;
+			}
+
+			.mark {
+				position: relative;
+				display: inline-block; /* Change from inline to inline-block */
+				isolation: isolate; /* Keeps highlight isolated from other elements */
+				padding: 0 4px;
+				font-weight: inherit;
+				color: inherit;
+				background: none;
+				line-height: 1.3; /* Ensures better text alignment */
+			}
+
+			/* First marker stroke */
+			.mark::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 8%;
+				height: 70%;
+				background-color: #bbd758a3;
+				border-radius: 12px;
+				z-index: -1;
+				transform: skew(-3deg) rotate(-1deg);
+			}
+
+			/* Second marker stroke for a natural highlight effect */
+			.mark::after {
+				content: "";
+				position: absolute;
+				left: 2%;
+				right: -2%;
+				bottom: 18%;
+				height: 60%;
+				background-color: #bbd758a3;
+				border-radius: 12px;
+				z-index: -1;
+				transform: skew(2deg) rotate(2deg);
+				opacity: 0.8;
 			}
 		</style>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
