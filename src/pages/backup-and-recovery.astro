@@ -9,6 +9,19 @@ import dashboard from '../assets/dashboard.png';
 import w247 from '../assets/247.png';
 import talk from '../assets/talk.png';
 import addOn from '../assets/add-on.png';
+import brMain from '../assets/brMain.png';
+import component2 from '../assets/component2.svg';
+import laptopBadge from '../assets/laptop-badge.png';
+import cloud from '../assets/cloud.png';
+import backup from '../assets/backup.png';
+import disaster from '../assets/disaster.png';
+import local from '../assets/local.png';
+import health from '../assets/health.png';
+import file from '../assets/file.png';
+import guide from '../assets/guide.png';
+import downtime from '../assets/downtime.png';
+import architecture from '../assets/architecture.png';
+import safeguard from '../assets/safeguard.png';
 ---
 
 <Layout>
@@ -48,18 +61,8 @@ import addOn from '../assets/add-on.png';
 								 background-position: center;
 								 height: 400px;`}>
                     <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
-                        <!-- Top Left Title -->
-                        <div class="text-start fw-bold mb-2" style="font-size: 36px; line-height: 36px; text-align: left;">
-                            Foundations Package
-                        </div>
-
-                        <!-- Centered Price -->
-                        <div class="d-flex flex-column align-items-center">
-                            <span class="fw-bold" style="font-size: 128px; line-height: 1;">$18</span>
-                            <span class="fw-bold d-block text-center" style="font-size: 27px; line-height: 30px;">
-									per user
-								</span>
-                        </div>
+                        <img src={component2.src} alt="Background" class="img-fluid rounded position-absolute" style="left: -42px; z-index: -1; width: 89%;">
+                        <img src={brMain.src} alt="Description" class="img-fluid rounded">
                     </div>
                 </div>
 
@@ -100,20 +103,30 @@ import addOn from '../assets/add-on.png';
                                 </span>        On demand restores</li>
                                 </ul>
                             </div>
-                            <div class="col-md-6">
-                                <div class="row justify-content-center">
-                                    <div class="col-3" style="text-align: end; padding-right: 0;">
-                                        <span class="display-1 fw-bold ">$<span class="super">3</span></span>
-                                    </div>
-                                    <div class="col-5 d-flex flex-column justify-content-center text-start" style="line-height: normal; padding-left: 0;">
-                                        <span class="fw-bold fs-2" >.50</span>
-                                        <span class="fw-bold fs-3" >per user</span>
-                                        <span class="fw-bold fs-3" >per month</span>
+                            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                <div class="position-relative d-flex align-items-center justify-content-center text-center"
+                                     style={`background-image: url(${backgroundMain.src});
+         background-size: cover;
+         background-position: center;
+         height: 400px;
+         width: 100%; /* Ensures full width */
+         display: flex; flex-direction: row;`}>
+                                    <div class="d-flex align-items-center">
+                                        <div class="col-5 text-end pe-0">
+                                            <span class="display-1 fw-bold">$<span class="super">3</span></span>
+                                        </div>
+                                        <div class="col-7 d-flex flex-column justify-content-center text-start ps-0" style="line-height: initial;">
+                                            <span class="fw-bold fs-2">.50</span>
+                                            <span class="fw-bold fs-4">per user</span>
+                                            <span class="fw-bold fs-4">per month</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div style="text-align: center;">
                     <a href="/contact-us/" class="btn btn-hero btn-lg d-inline-flex align-items-center">
                         Get Started
                         <svg
@@ -148,12 +161,21 @@ import addOn from '../assets/add-on.png';
                 </div>
                 <div class="col-md-3">
                     <div class="row justify-content-center">
-                        <div class="col-6" style="text-align: end; padding-right: 0;">
-                            <span class="display-1 fw-bold ">$<span class="super">40</span></span>
-                        </div>
-                        <div class="col-6 d-flex flex-column justify-content-center text-start" style="line-height: normal; padding-left: 0;">
-                            <span class="fw-bold fs-3" >per user</span>
-                            <span class="fw-bold fs-3" >per month</span>
+                        <div class="position-relative d-flex align-items-center justify-content-center text-center"
+                             style={`background-image: url(${backgroundMain.src});
+         background-size: cover;
+         background-position: center;
+         height: 400px;
+         width: 100%; /* Ensures full width */
+         display: flex; flex-direction: row;`}>
+                            <div class="col-6" style="text-align: end; padding-right: 0;">
+                                <span class="display-1 fw-bold ">$<span class="super">40</span></span>
+                            </div>
+                            <div class="col-6 d-flex flex-column justify-content-center text-start" style="line-height: normal; padding-left: 0;">
+                                <span class="fw-bold fs-3" >per user</span>
+                                <span class="fw-bold fs-3" >per month</span>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -177,7 +199,7 @@ import addOn from '../assets/add-on.png';
                 <div class="col-md-6">
                     <div class="row align-items-center mb-4">
                         <div class="col-3 text-center">
-                            <img src={magnifyingLaptop.src} alt="Protection Icon" class="img-fluid rounded">
+                            <img src={dashboard.src} alt="Protection Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p style="font-size: 24px; font-weight: 700;">Complete Backup Management</p>
@@ -187,7 +209,7 @@ import addOn from '../assets/add-on.png';
 
                     <div class="row align-items-center mb-4">
                         <div class="col-3 text-center">
-                            <img src={moneyShield.src} alt="Value Icon" class="img-fluid rounded">
+                            <img src={cloud.src} alt="Value Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p style="font-size: 24px; font-weight: 700;">Direct-to-Cloud Storage</p>
@@ -197,7 +219,7 @@ import addOn from '../assets/add-on.png';
 
                     <div class="row align-items-center">
                         <div class="col-3 text-center">
-                            <img src={dashboard.src} alt="Management Icon" class="img-fluid rounded">
+                            <img src={backup.src} alt="Management Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p style="font-size: 24px; font-weight: 700;">Customized Backup Plans</p>
@@ -207,7 +229,7 @@ import addOn from '../assets/add-on.png';
 
                     <div class="row align-items-center">
                         <div class="col-3 text-center">
-                            <img src={addOn.src} alt="Customizable Icon" class="img-fluid rounded">
+                            <img src={disaster.src} alt="Customizable Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p class="fs-4 fw-bold lh-sm">Disaster Recovery Assistance</p>
@@ -218,7 +240,7 @@ import addOn from '../assets/add-on.png';
                 <div class="col-md-6">
                     <div class="row align-items-center">
                         <div class="col-3 text-center">
-                            <img src={addOn.src} alt="Customizable Icon" class="img-fluid rounded">
+                            <img src={local.src} alt="Customizable Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p class="fs-4 fw-bold lh-sm">Bring Your Own Local Storage</p>
@@ -228,7 +250,7 @@ import addOn from '../assets/add-on.png';
 
                     <div class="row align-items-center mb-4">
                         <div class="col-3 text-center">
-                            <img src={w247.src} alt="Defense Icon" class="img-fluid rounded">
+                            <img src={health.src} alt="Defense Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p style="font-size: 24px; font-weight: 700;">Backup Health Reports</p>
@@ -238,7 +260,7 @@ import addOn from '../assets/add-on.png';
 
                     <div class="row align-items-center mb-4">
                         <div class="col-3 text-center">
-                            <img src={talk.src} alt="Focus Icon" class="img-fluid rounded">
+                            <img src={file.src} alt="Focus Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p style="font-size: 24px; font-weight: 700;">On-Demand File Recovery</p>
@@ -248,7 +270,7 @@ import addOn from '../assets/add-on.png';
 
                     <div class="row align-items-center">
                         <div class="col-3 text-center">
-                            <img src={addOn.src} alt="Customizable Icon" class="img-fluid rounded">
+                            <img src={guide.src} alt="Customizable Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p class="fs-4 fw-bold lh-sm">Expert Guidance and Support</p>
@@ -281,7 +303,7 @@ import addOn from '../assets/add-on.png';
                 <div class="col-md-6">
                     <div class="row align-items-center mb-4">
                         <div class="col-3 text-center">
-                            <img src={magnifyingLaptop.src} alt="Protection Icon" class="img-fluid rounded">
+                            <img src={downtime.src} alt="Protection Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p style="font-size: 24px; font-weight: 700;">Reduce Downtime</p>
@@ -301,7 +323,7 @@ import addOn from '../assets/add-on.png';
 
                     <div class="row align-items-center">
                         <div class="col-3 text-center">
-                            <img src={dashboard.src} alt="Management Icon" class="img-fluid rounded">
+                            <img src={architecture.src} alt="Management Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p style="font-size: 24px; font-weight: 700;">Minimize Uncertainty</p>
@@ -312,7 +334,7 @@ import addOn from '../assets/add-on.png';
                 <div class="col-md-6">
                     <div class="row align-items-center mb-4">
                         <div class="col-3 text-center">
-                            <img src={w247.src} alt="Defense Icon" class="img-fluid rounded">
+                            <img src={safeguard.src} alt="Defense Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p style="font-size: 24px; font-weight: 700;">Safeguard Your Hard Work</p>
@@ -322,7 +344,7 @@ import addOn from '../assets/add-on.png';
 
                     <div class="row align-items-center mb-4">
                         <div class="col-3 text-center">
-                            <img src={talk.src} alt="Focus Icon" class="img-fluid rounded">
+                            <img src={laptopBadge.src} alt="Focus Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p style="font-size: 24px; font-weight: 700;">Stay Compliant and Secure</p>
@@ -332,7 +354,7 @@ import addOn from '../assets/add-on.png';
 
                     <div class="row align-items-center">
                         <div class="col-3 text-center">
-                            <img src={addOn.src} alt="Customizable Icon" class="img-fluid rounded">
+                            <img src={talk.src} alt="Customizable Icon" class="img-fluid rounded">
                         </div>
                         <div class="col-9">
                             <p class="fs-4 fw-bold lh-sm">Focus on Growth, Not Recovery</p>
